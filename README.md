@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=nikolasdehor)
+![Profile Views](https://img.shields.io/badge/Profile%20Views-Counter-brightgreen)
 <!--
 **nikolasdehor/nikolasdehor** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
