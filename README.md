@@ -1,8 +1,7 @@
 ### Hi there 👋
-<br><br>
-<p align="center" dir="auto">
-    Visitors<br></p>
-    ![Visitor Count](https://profile-counter.glitch.me/{nikolasdehor}/count.svg)
+
+#Visitors
+![Visitor Count](https://profile-counter.glitch.me/{nikolasdehor}/count.svg)
 
 <!--
 **nikolasdehor/nikolasdehor** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
