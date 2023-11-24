@@ -1,6 +1,7 @@
 ### Hi there 👋
 
-![Profile Views](https://img.shields.io/badge/Profile%20Views-Counter-brightgreen)
+![Visitor Count](https://profile-counter.glitch.me/{nikolasdehor}/count.svg)
+
 <!--
 **nikolasdehor/nikolasdehor** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
