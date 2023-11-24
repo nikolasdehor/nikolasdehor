@@ -1,5 +1,6 @@
 ### Hi there 👋
-Contador de Visitantes
+
+**Visitors**
 
 ![Visitor Count](https://profile-counter.glitch.me/{nikolasdehor}/count.svg)
 
