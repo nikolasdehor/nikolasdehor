@@ -1,7 +1,8 @@
 ### Hi there 👋
 
 <br><br>
-# Visitors
+<p align="center" dir="auto">
+# Visitors<br>
 
 ![Visitor Count](https://profile-counter.glitch.me/{nikolasdehor}/count.svg)
 
