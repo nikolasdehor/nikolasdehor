@@ -1,9 +1,10 @@
 ### Hi there 👋
 
+![Visitor Count](https://profile-counter.glitch.me/{nikolasdehor}/count.svg)
+
 <br><br>
 <p align="center" dir="auto">
-  Visitors<br>
-![Visitor Count](https://profile-counter.glitch.me/{nikolasdehor}/count.svg)
+    Visitors<br>
 </p>
 
 <!--
@@ -22,4 +23,5 @@ Here are some ideas to get you started:
 -->
 
 <!--## Estatísticas no GitHub
-![Nikolas de Hor](https://github-readme-stats.vercel.app/api?username=nikolasdehor&show_icons=true)-->
+![Nikolas de Hor](https://github-readme-stats.vercel.app/api?username=nikolasdehor&show_icons=true)
+-->
