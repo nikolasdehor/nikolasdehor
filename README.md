@@ -19,5 +19,5 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-## Estatísticas no GitHub
-![Nikolas de Hor](https://github-readme-stats.vercel.app/api?username=nikolasdehor&show_icons=true)
+<!--## Estatísticas no GitHub
+![Nikolas de Hor](https://github-readme-stats.vercel.app/api?username=nikolasdehor&show_icons=true)-->
