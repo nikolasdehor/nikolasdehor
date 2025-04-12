@@ -27,9 +27,12 @@ Saúde Sem Espera	App para gestão de filas médicas com geolocalização, QR Co
 Bots corporativos	Bots que automatizam decisões em empresas via WhatsApp/Telegram	Python, Selenium, APIs, ChatGPT
 IA Jurídica Localhost	IA que lê PDF de processos e responde em linguagem natural	Apache, Python, NLP
 Portal Ramais	WebApp com sistema de login, filtros de empresa, e design responsivo	HTML, CSS, JS, PHP, MySQL
+
 ⚙️ Stack que carrego no meu cinturão
 <div align="center"> <img src="https://skillicons.dev/icons?i=python,dart,flutter,java,js,html,css,firebase,mysql,linux,docker,github,vscode" /> </div>
+
 🚀 Nível atual: desbloqueando 🧠+⚙️
+
 📦 Criando produtos reais e bots para empresas
 
 🔄 Automatizando fluxos complexos com IA + Selenium + API
