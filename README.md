@@ -27,8 +27,10 @@ Saúde Sem Espera	App com QR Code, fila ao vivo, e localização do paciente	Flu
 Bots corporativos	Automatizam decisões e respondem humanos via WhatsApp	Python + Selenium + APIs
 IA Jurídica	Lê PDFs jurídicos e responde perguntas	Python + NLP + Interface local
 Portal de Ramais	Sistema com login, filtros por empresa, UI moderna e responsiva	PHP + JS + MySQL + HTML/CSS
+
 📊 Insights do GitHub
 <div align="center"> <img src="https://github-readme-stats.vercel.app/api?username=nikolasdehor&show_icons=true&theme=tokyonight" /> <br/> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nikolasdehor&layout=compact&theme=tokyonight" /> </div>
+
 🧭 Certificações & Formação
 🎓 Sistemas de Informação – IF Goiano – 7º período
 📚 Certificações:
