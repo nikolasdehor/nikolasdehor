@@ -28,7 +28,7 @@ Meu foco é claro: **entregar valor real** com tecnologia moderna, acessível e 
 ## ⚙️ Stack principal
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,dart,flutter,js,java,firebase,mysql,docker,android,linux,github,vscode](https://skillicons.dev/icons?i=aws,python,dart,flutter,js,java,firebase,mysql,docker,php,linux,github,vscode,mongodb,angular,react,ts,nodejs" />
+  <img src="https://skillicons.dev/icons?i=aws,python,dart,flutter,js,java,firebase,mysql,docker,php,linux,github,vscode,mongodb,angular,react,ts,nodejs" />
 </div>
 
 ---
