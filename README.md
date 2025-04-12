@@ -21,8 +21,12 @@ Meu foco é claro: entregar valor real com tecnologia moderna, acessível e huma
 
 ⚙️ Stack principal
 <div align="center"> <img src="https://skillicons.dev/icons?i=python,dart,flutter,js,java,firebase,mysql,docker,vagrant,linux,github,vscode" /> </div>
+
 🧠 Projetos com alma
-💡 Projeto	📄 Descrição	🛠️ Tecnologias
+💡 Projeto	
+📄 Descrição	
+🛠️ Tecnologias
+
 Saúde Sem Espera	App com QR Code, fila ao vivo, e localização do paciente	Flutter + Firebase + Firestore
 Bots corporativos	Automatizam decisões e respondem humanos via WhatsApp	Python + Selenium + APIs
 IA Jurídica	Lê PDFs jurídicos e responde perguntas	Python + NLP + Interface local
@@ -30,7 +34,7 @@ Portal de Ramais	Sistema com login, filtros por empresa, UI moderna e responsiva
 
 📊 Insights do GitHub
 <div align="center"> <img src="https://github-readme-stats.vercel.app/api?username=nikolasdehor&show_icons=true&theme=tokyonight" /> <br/> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nikolasdehor&layout=compact&theme=tokyonight" /> </div>
-
+<br>
 🧭 Certificações & Formação
 🎓 Sistemas de Informação – IF Goiano – 7º período
 📚 Certificações:
