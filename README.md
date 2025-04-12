@@ -31,6 +31,7 @@ Portal Ramais	WebApp com sistema de login, filtros de empresa, e design responsi
 ⚙️ Stack que carrego no meu cinturão
 <div align="center"> <img src="https://skillicons.dev/icons?i=python,dart,flutter,java,js,html,css,firebase,mysql,linux,docker,github,vscode" /> </div>
 
+
 🚀 Nível atual: desbloqueando 🧠+⚙️
 
 📦 Criando produtos reais e bots para empresas
