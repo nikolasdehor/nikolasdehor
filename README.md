@@ -1,85 +1,62 @@
-<h1 align="center">🚀 Nikolas de Hor</h1>
-<p align="center">💻 Desenvolvedor Full Stack | 🤖 DevOps & Automation Specialist | 🧠 Explorador de IA</p>
-<p align="center">🎓 Sistemas de Informação - IF Goiano | 🌎 Conectando soluções com propósito</p>
-
----
-
-### 🧠 Sobre mim
-
-Sou o Nikolas de Hor — desenvolvedor, estrategista de soluções digitais e mente inquieta por **inovação tecnológica**. Transformo ideias em projetos reais com foco em **automatização inteligente**, **IA aplicada**, **infraestrutura robusta** e **experiência do usuário**.
-
-Seja construindo bots que conversam com o mercado, sistemas de controle hospitalar com mapas em tempo real ou automatizando rotinas corporativas que ninguém teve coragem de encarar… estou sempre indo **além do esperado**.
-
----
-
-### 🛠️ Tecnologias que domino
-
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
-![Dart](https://img.shields.io/badge/-Dart-0175C2?style=flat&logo=dart&logoColor=white)
-![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat&logo=flutter&logoColor=white)
-![Java](https://img.shields.io/badge/-Java-007396?style=flat&logo=java&logoColor=white)
-![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
-![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![HTML](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Vagrant](https://img.shields.io/badge/-Vagrant-1563FF?style=flat&logo=vagrant&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)
-
----
-
-### 🧪 Projetos que contam histórias
-
-- 🎯 **[Saúde Sem Espera](https://github.com/nikolasdehor/hospital_app)**: Aplicativo Flutter com filas inteligentes, geolocalização, QR Codes e Firebase — criado para revolucionar o atendimento em clínicas e hospitais.
-- 🛠 **Bots inteligentes para empresas**: Automatizam processos internos, analisam parâmetros, conversam via WhatsApp/Telegram e tomam decisões baseadas em contexto real. Eles estão rodando **em produção** em empresas reais.
-- 📦 **Sistema de marketing para indústrias de plástico**: Gerando sites, catálogos e automações de divulgação com integração full stack.
-- 🧠 **Projeto IA jurídica**: Assistente de leitura de PDFs jurídicos com capacidade de responder perguntas por texto sobre cotações, processos e documentos — rodando em ambiente Apache localhost.
-
----
-
-### 📊 GitHub Insights
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nikolasdehor&show_icons=true&theme=tokyonight" />
-  <br />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nikolasdehor&layout=compact&theme=tokyonight" />
-</div>
-
----
-
-### 📚 Formação + Certificações
-
-- 🎓 Sistemas de Informação – IF Goiano – 7º período
-- 🧠 Cursos concluídos:
-  - Fundamentos de IA (DIO)
-  - Python do Básico ao Avançado (Udemy)
-  - Network Defense (Cisco)
-  - ChatGPT for Educators (OpenAI)
-
----
-
-### 🧭 Agora focado em:
-
-- ⚙️ Criação de sistemas com IA generativa no backend
-- 💬 Integração de bots com linguagem natural em múltiplas plataformas
-- 📈 Desenvolvimento web + mobile para empresas locais e regionais
-- 🔒 Aplicações seguras com autenticação e autorização
-- 🧠 Aprimoramento contínuo em IA, Flutter e arquiteturas modernas
-
----
-
-### 🌎 Me encontre aqui
-
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/nikolasdehor)
-[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/nikolasdehor)
-[![Site](https://img.shields.io/badge/-dehor.dev-121011?style=flat&logo=chrome&logoColor=white)](https://dehor.dev)
-
----
-
+<!-- Banner animado -->
 <p align="center">
-  <b>🧮 Visitantes que já passaram por aqui:</b><br>
-  <img src="https://profile-counter.glitch.me/nikolasdehor/count.svg" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:f2709c,100:ff9472&height=180&section=header&text=Nikolas%20de%20Hor&fontSize=35&fontColor=fff&animation=twinkling"/>
 </p>
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&pause=1000&center=true&vCenter=true&width=435&lines=🚀%20Desenvolvedor%20Full%20Stack;🤖%20Automação%20%2B%20IA%20%2B%20Bots;🎯%20Tecnologia%20com%20propósito;🌱%20Sempre%20em%20evolução" alt="Typing SVG" />
+</p>
+
+---
+
+## 👨‍💻 Sobre mim
+
+```bash
+> Nome: Nikolas de Hor
+> Cargo: Desenvolvedor Full Stack & DevOps
+> Missão: Automatizar o que é repetitivo e expandir o que é possível
+> Linguagem favorita: Python 🐍 + Dart 🐦
+> Dev com propósito: Criar soluções que geram impacto real
+🧠 Apaixonado por inteligência artificial aplicada, automatização de rotinas, infraestrutura DevOps e desenvolvimento de sistemas web e mobile sob medida.
+💬 Sou movido a ideias desafiadoras e projetos com alma, daqueles que transformam realidades e quebram o trivial.
+```
+
+🧪 Projetos com alma
+Projeto	Descrição	Tecnologias
+Saúde Sem Espera	App para gestão de filas médicas com geolocalização, QR Code e Firestore	Flutter, Dart, Firebase
+Bots corporativos	Bots que automatizam decisões em empresas via WhatsApp/Telegram	Python, Selenium, APIs, ChatGPT
+IA Jurídica Localhost	IA que lê PDF de processos e responde em linguagem natural	Apache, Python, NLP
+Portal Ramais	WebApp com sistema de login, filtros de empresa, e design responsivo	HTML, CSS, JS, PHP, MySQL
+⚙️ Stack que carrego no meu cinturão
+<div align="center"> <img src="https://skillicons.dev/icons?i=python,dart,flutter,java,js,html,css,firebase,mysql,linux,docker,vagrant,github,vscode" /> </div>
+🚀 Nível atual: desbloqueando 🧠+⚙️
+📦 Criando produtos reais e bots para empresas
+
+🔄 Automatizando fluxos complexos com IA + Selenium + API
+
+🧬 Evoluindo no desenvolvimento mobile com Flutter + Firestore
+
+📡 Explorando NLP com PDFs + linguagem jurídica + IA generativa
+
+☁️ Estudando integração contínua (CI/CD) e escalabilidade
+
+📊 GitHub Insights
+<div align="center"> <img src="https://github-readme-stats.vercel.app/api?username=nikolasdehor&show_icons=true&theme=radical&hide=stars"/> <br> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nikolasdehor&layout=compact&theme=radical"/> </div>
+🧭 Certificações + Formação
+🎓 Sistemas de Informação – IF Goiano – 7º Período
+📚 +10 cursos de tecnologia incluindo:
+
+Python do Básico ao Avançado (Udemy)
+
+Fundamentos de IA (DIO)
+
+Network Defense (Cisco)
+
+ChatGPT Educacional (OpenAI)
+
+Cloud, Git, DevOps, Backend e Frontend
+
+🌐 Me encontre no mundo real
+<div align="center"> <a href="https://linkedin.com/in/nikolasdehor"> <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" /> </a> <a href="https://instagram.com/nikolasdehor"> <img src="https://img.shields.io/badge/-Instagram-E4405F?style=flat&logo=instagram&logoColor=white" /> </a> <a href="https://dehor.dev"> <img src="https://img.shields.io/badge/-dehor.dev-121011?style=flat&logo=Google-chrome&logoColor=white" /> </a> </div>
+<p align="center"> <b>Você é o visitante número:</b><br> <img src="https://profile-counter.glitch.me/nikolasdehor/count.svg" /> </p>
+<p align="center"> <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:ff9472,100:f2709c&height=150&section=footer"/> </p> ```
