@@ -20,7 +20,7 @@ Crio bots que conversam com sistemas, apps que guiam pessoas, rotinas que decide
 Meu foco é claro: entregar valor real com tecnologia moderna, acessível e humana.
 
 ⚙️ Stack principal
-<div align="center"> <img src="https://skillicons.dev/icons?i=python,dart,flutter,js,java,firebase,mysql,docker,vagrant,linux,github,vscode" /> </div>
+<div align="center"> <img src="https://skillicons.dev/icons?i=python,dart,flutter,js,java,firebase,mysql,docker,linux,github,vscode" /> </div>
 
 🧠 Projetos com alma
 💡 Projeto	
@@ -34,7 +34,8 @@ Portal de Ramais	Sistema com login, filtros por empresa, UI moderna e responsiva
 
 📊 Insights do GitHub
 <div align="center"> <img src="https://github-readme-stats.vercel.app/api?username=nikolasdehor&show_icons=true&theme=tokyonight" /> <br/> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nikolasdehor&layout=compact&theme=tokyonight" /> </div>
-<br>
+<div>
+
 🧭 Certificações & Formação
 🎓 Sistemas de Informação – IF Goiano – 7º período
 📚 Certificações:
