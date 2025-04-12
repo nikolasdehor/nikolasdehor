@@ -1,65 +1,59 @@
-<!-- Banner animado -->
+<!-- Topo com banner dinâmico -->
 <p align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:f2709c,100:ff9472&height=180&section=header&text=Nikolas%20de%20Hor&fontSize=35&fontColor=fff&animation=twinkling"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=Nikolas%20de%20Hor&fontAlign=40&fontColor=ffffff&fontSize=40&desc=Inovando%20com%20propósito%2C%20codando%20com%20alma.&descAlign=60&descSize=16&color=gradient"/>
 </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&pause=1000&center=true&vCenter=true&width=435&lines=🚀%20Desenvolvedor%20Full%20Stack;🤖%20Automação%20%2B%20IA%20%2B%20Bots;🎯%20Tecnologia%20com%20propósito;🌱%20Sempre%20em%20evolução" alt="Typing SVG" />
-</p>
-
----
-
-## 👨‍💻 Sobre mim
-
+<!-- Console simulado -->
 ```bash
-> Nome: Nikolas de Hor
-> Cargo: Desenvolvedor Full Stack & DevOps
-> Missão: Automatizar o que é repetitivo e expandir o que é possível
-> Linguagem favorita: Python 🐍 + Dart 🐦
-> Dev com propósito: Criar soluções que geram impacto real
-🧠 Apaixonado por inteligência artificial aplicada, automatização de rotinas, infraestrutura DevOps e desenvolvimento de sistemas web e mobile sob medida.
-💬 Sou movido a ideias desafiadoras e projetos com alma, daqueles que transformam realidades e quebram o trivial.
+> nikolasdehor --start
+🎓 Estudante de Sistemas de Informação (IF Goiano)
+💻 Desenvolvedor Full Stack | DevOps | Criador de Bots
+🧠 Apaixonado por IA aplicada, automação e sistemas com propósito
+🌐 Transformando códigos em soluções REAIS para empresas e pessoas
+🚀 Quem é Nikolas?
+"Não sou apenas mais um dev.
+Sou o elo entre problemas complexos e soluções que funcionam."
 ```
 
-🧪 Projetos com alma
-Projeto	Descrição	Tecnologias
-Saúde Sem Espera	App para gestão de filas médicas com geolocalização, QR Code e Firestore	Flutter, Dart, Firebase
-Bots corporativos	Bots que automatizam decisões em empresas via WhatsApp/Telegram	Python, Selenium, APIs, ChatGPT
-IA Jurídica Localhost	IA que lê PDF de processos e responde em linguagem natural	Apache, Python, NLP
-Portal Ramais	WebApp com sistema de login, filtros de empresa, e design responsivo	HTML, CSS, JS, PHP, MySQL
+Sou um desenvolvedor que pensa além do código.
+Crio bots que conversam com sistemas, apps que guiam pessoas, rotinas que decidem sozinhas e interfaces que não deixam dúvidas.
+Meu foco é claro: entregar valor real com tecnologia moderna, acessível e humana.
 
-⚙️ Stack que carrego no meu cinturão
-<div align="center"> <img src="https://skillicons.dev/icons?i=python,dart,flutter,java,js,html,css,firebase,mysql,linux,docker,github,vscode" /> 
-</div>
-🚀 Nível atual: desbloqueando 🧠+⚙️
+⚙️ Stack principal
+<div align="center"> <img src="https://skillicons.dev/icons?i=python,dart,flutter,js,java,firebase,mysql,docker,vagrant,linux,github,vscode" /> </div>
+🧠 Projetos com alma
+💡 Projeto	📄 Descrição	🛠️ Tecnologias
+Saúde Sem Espera	App com QR Code, fila ao vivo, e localização do paciente	Flutter + Firebase + Firestore
+Bots corporativos	Automatizam decisões e respondem humanos via WhatsApp	Python + Selenium + APIs
+IA Jurídica	Lê PDFs jurídicos e responde perguntas	Python + NLP + Interface local
+Portal de Ramais	Sistema com login, filtros por empresa, UI moderna e responsiva	PHP + JS + MySQL + HTML/CSS
+📊 Insights do GitHub
+<div align="center"> <img src="https://github-readme-stats.vercel.app/api?username=nikolasdehor&show_icons=true&theme=tokyonight" /> <br/> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nikolasdehor&layout=compact&theme=tokyonight" /> </div>
+🧭 Certificações & Formação
+🎓 Sistemas de Informação – IF Goiano – 7º período
+📚 Certificações:
 
-📦 Criando produtos reais e bots para empresas
+Inteligência Artificial (DIO)
 
-🔄 Automatizando fluxos complexos com IA + Selenium + API
-
-🧬 Evoluindo no desenvolvimento mobile com Flutter + Firestore
-
-📡 Explorando NLP com PDFs + linguagem jurídica + IA generativa
-
-☁️ Estudando integração contínua (CI/CD) e escalabilidade
-
-📊 GitHub Insights
-<div align="center"> <img src="https://github-readme-stats.vercel.app/api?username=nikolasdehor&show_icons=true&theme=radical&hide=stars"/> <br> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nikolasdehor&layout=compact&theme=radical"/> </div>
-🧭 Certificações + Formação
-🎓 Sistemas de Informação – IF Goiano – 7º Período
-📚 +10 cursos de tecnologia incluindo:
-
-Python do Básico ao Avançado (Udemy)
-
-Fundamentos de IA (DIO)
+Python (Udemy)
 
 Network Defense (Cisco)
 
-ChatGPT Educacional (OpenAI)
+ChatGPT Foundations (OpenAI)
 
-Cloud, Git, DevOps, Backend e Frontend
+🛠 Atualmente desenvolvendo:
+bash
+Copiar
+Editar
+> Criando automações com IA generativa
+> Integrando APIs com bots interativos
+> Ampliando apps com Flutter + Firestore
+> Estudando CI/CD + boas práticas DevOps
+> Focado em projetos REAIS para empresas brasileiras
+🌐 Conecte-se comigo
+<div align="center"> <a href="https://linkedin.com/in/nikolasdehor"> <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /> </a> <a href="https://instagram.com/nikolasdehor"> <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /> </a> <a href="https://dehor.dev"> <img src="https://img.shields.io/badge/dehor.dev-000000?style=for-the-badge&logo=google-chrome&logoColor=white" /> </a> </div>
+<p align="center"> <b>👁 Visitantes que passaram por aqui</b><br> <img src="https://profile-counter.glitch.me/nikolasdehor/count.svg" /> </p>
 
-🌐 Me encontre no mundo real
-<div align="center"> <a href="https://linkedin.com/in/nikolasdehor"> <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" /> </a> <a href="https://instagram.com/nikolasdehor"> <img src="https://img.shields.io/badge/-Instagram-E4405F?style=flat&logo=instagram&logoColor=white" /> </a> <a href="https://dehor.dev"> <img src="https://img.shields.io/badge/-dehor.dev-121011?style=flat&logo=Google-chrome&logoColor=white" /> </a> </div>
-<p align="center"> <b>Você é o visitante número:</b><br> <img src="https://profile-counter.glitch.me/nikolasdehor/count.svg" /> </p>
-<p align="center"> <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:ff9472,100:f2709c&height=150&section=footer"/> </p> ```
+"Tecnologia é só o meio. Meu propósito é o impacto."
+E se você chegou até aqui, talvez seja hora de criar algo juntos.
+Me chama.
