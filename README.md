@@ -48,7 +48,6 @@ Meu foco é claro: **entregar valor real** com tecnologia moderna, acessível e 
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=nikolasdehor&show_icons=true&theme=tokyonight" />
-  <br/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nikolasdehor&layout=compact&theme=tokyonight" />
 </div>
 
