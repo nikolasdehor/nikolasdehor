@@ -53,14 +53,39 @@ Meu foco é claro: **entregar valor real** com tecnologia moderna, acessível e 
 
 ---
 
-## 🧭 Certificações & Formação
+## 🏅 Certificações & Formação
 
-🎓 **Sistemas de Informação** – IF Goiano – 7º período  
-📚 **Certificações**:
-- Inteligência Artificial (DIO)
-- Python (Udemy)
-- Network Defense (Cisco)
-- ChatGPT Foundations (OpenAI)
+🎓 **Bacharelado em Sistemas de Informação** – IF Goiano (7º período)
+
+### Certificados principais
+- **AWS Cloud Practitioner Essentials** – AWS Skill Builder (2025)  
+- **Formação Fundamentos de Inteligência Artificial** – DIO × Santander Open Academy (2024)  
+- **ChatGPT Foundations for K-12 Educators** – OpenAI (2024)  
+- **Algoritmos e Lógica de Programação do Básico ao Avançado** – Udemy (2024)  
+- **Programação em Python do Básico ao Avançado** – Udemy (2024)  
+- **Network Defense** – Cisco Networking Academy (2024)  
+
+<details>
+  <summary>+ Ver todas as trilhas, badges e labs concluídos</summary>
+
+  #### 🌩️ AWS & Cloud
+  - **AWS Technical Essentials** – AWS Skill Builder (2025)  
+  - **Amazon VPC Deep Dive Lab** – AWS Skill Builder / Qwiklabs (2025)  
+  - **Building Serverless Applications on AWS** – AWS Skill Builder (2025)  
+  - **Introduction to DevOps on AWS** – AWS Skill Builder (2025)  
+
+  #### 🖥️ DIO & Santander Open Academy
+  - **Formação JavaScript Developer**  
+  - **Formação AWS Cloud Fundamentals**  
+  - **Formação Git & GitHub Essentials**  
+  - **Introdução ao Linux**  
+  - **Formação SQL Database Specialist**  
+
+  #### 📚 Outros cursos & micro-certificados
+  - **Fundamentos de Docker** – Alura  
+  - **Scrum Foundation Professional Certificate** – CertiProf  
+  - **English for Tech Professionals** – EF English Live  
+</details>
 
 ---
 
