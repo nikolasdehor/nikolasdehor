@@ -47,8 +47,8 @@ Meu foco é claro: **entregar valor real** com tecnologia moderna, acessível e 
 ## 📊 Insights do GitHub
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nikolasdehor&show_icons=true&theme=tokyonight" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nikolasdehor&layout=compact&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api?username=nikolasdehor&show_icons=true&theme=tokyonight&height=195" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nikolasdehor&layout=compact&theme=tokyonight&height=195" />
 </div>
 
 ---
