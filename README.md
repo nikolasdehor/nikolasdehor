@@ -102,7 +102,8 @@ Meu foco é claro: **entregar valor real** com tecnologia moderna, acessível e 
 
 <p align="center">
   <b>👁 Visitantes que passaram por aqui</b><br>
-  <img src="https://profile-counter.glitch.me/nikolasdehor/count.svg" />
+  <img src="![](https://komarev.com/ghpvc/?username=nikolasdehor&color=green&style=flat-square&label=VISITAS)
+" />
 </p>
 
 ---
