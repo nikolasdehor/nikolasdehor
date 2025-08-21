@@ -103,7 +103,7 @@ Meu foco é claro: **entregar valor real** com tecnologia moderna, acessível e 
 <p align="center">
   <b>👁 Visitantes que passaram por aqui</b><br>
   <a href="https://github.com/nikolasdehor">
-    <img src="https://komarev.com/ghpvc/?username=nikolasdehor&color=green&style=flat-square&label=VISITAS" alt="Profile Views" />
+    <img src="https://counter.kuber.studio/nikolasdehor/hacker/count.svg" alt="Profile views" />
   </a>
 </p>
 
