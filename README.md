@@ -102,7 +102,7 @@ Meu foco é claro: **entregar valor real** com tecnologia moderna, acessível e 
 
 <p align="center">
   <b>👁 Visitantes que passaram por aqui</b><br>
-  <img src="![Profile Views](https://komarev.com/ghpvc/?username=nikolasdehor&color=blue&style=flat)/>
+  <img src="![visitas](https://visitor-badge.laobi.icu/badge?page_id=SeuUsuario.SeuRepo)>
 </p>
 
 ---
