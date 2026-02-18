@@ -22,7 +22,7 @@ Currently studying Information Systems at IF Goiano.
 
 #### Currently building
 
-- 🍽️ [**CardapIA**](https://github.com/nikolasdehor/CardapIA) — Multi-agent restaurant menu analysis with RAG `Python` `FastAPI` `LangChain`
+- 🍽️ [**SaborIA**](https://github.com/nikolasdehor/SaborIA) — Multi-agent restaurant menu analysis with RAG `Python` `FastAPI` `LangChain`
 - 🏥 **Saúde Sem Espera** — Real-time patient queue with QR codes and live tracking `Flutter` `Firebase`
 - 🏦 **IQD** — Process automation bot for Banco do Brasil `Python`
 - 🔌 **Plugin** — Internal productivity tool for Banco do Brasil
