@@ -10,27 +10,14 @@ Currently studying Information Systems at IF Goiano.
 
 ---
 
-#### Projects
+#### Currently building
 
-**AI & Data**
 - [**CardapIA**](https://github.com/nikolasdehor/CardapIA) — Multi-agent restaurant menu analysis with RAG `Python` `FastAPI` `LangChain`
-- [**DIO_Chatbot_PDF_IA**](https://github.com/nikolasdehor/DIO_Chatbot_PDF_IA) — AI chatbot that answers questions from academic PDFs `Python` `FAISS` `OpenAI`
-- [**SalesPromptAnalytics**](https://github.com/nikolasdehor/SalesPromptAnalytics) — Multi-marketplace sales data analytics `Python` `Pandas`
-- [**DIO_Vendas_ML**](https://github.com/nikolasdehor/DIO_Vendas_ML) — Sales prediction with linear regression and MLflow `Python` `Scikit-learn`
-- [**AI-Project-Docs**](https://github.com/nikolasdehor/AI-Project-Docs) — AI-powered automatic project documentation `.NET` `SQL Server`
-- [**analise-imagens-texto-ia-aws**](https://github.com/nikolasdehor/analise-imagens-texto-ia-aws) — Document text extraction with Amazon Textract `Python` `AWS`
-- [**reconhecimento-celebridades-aws**](https://github.com/nikolasdehor/reconhecimento-celebridades-aws) — Celebrity recognition with Amazon Rekognition `Python` `AWS`
-
-**Web & Apps**
 - **Saúde Sem Espera** — Real-time patient queue with QR codes and live tracking `Flutter` `Firebase`
-- [**SysDelivery**](https://github.com/nikolasdehor/SysDelivery) — Full e-commerce delivery platform with cart, reviews and order tracking `PHP` `CodeIgniter` `MySQL`
+- [**SysDelivery**](https://github.com/nikolasdehor/SysDelivery) — E-commerce delivery platform with cart, reviews and order tracking `PHP` `CodeIgniter` `MySQL`
+- **Corporate Bots** — WhatsApp automation for business decisions `Python` `Selenium`
 - **Portal de Ramais** — Internal company directory with auth and filters `PHP` `MySQL`
 - [**patasdocerrado**](https://github.com/nikolasdehor/patasdocerrado) — Animal welfare web application `PHP`
-- [**Converter**](https://github.com/nikolasdehor/Converter) — Cryptography and morse code converter `JavaScript`
-- [**quantum-portal-v2**](https://github.com/nikolasdehor/quantum-portal-v2) — Interactive quantum-themed portfolio game `HTML` `JS`
-
-**DevOps & Infra**
-- **Corporate Bots** — WhatsApp automation for business decisions `Python` `Selenium`
 - [**Firewall-de-Rede-em-Docker**](https://github.com/nikolasdehor/Firewall-de-Rede-em-Docker) — Network firewall with iptables in Docker `Shell` `Docker`
 
 #### Stack
