@@ -22,13 +22,12 @@ Currently studying Information Systems at IF Goiano.
 
 #### Currently building
 
-- [**CardapIA**](https://github.com/nikolasdehor/CardapIA) — Multi-agent restaurant menu analysis with RAG `Python` `FastAPI` `LangChain`
-- **Saúde Sem Espera** — Real-time patient queue with QR codes and live tracking `Flutter` `Firebase`
-- [**SysDelivery**](https://github.com/nikolasdehor/SysDelivery) — E-commerce delivery platform with cart, reviews and order tracking `PHP` `CodeIgniter` `MySQL`
-- **Corporate Bots** — WhatsApp automation for business decisions `Python` `Selenium`
-- **Portal de Ramais** — Internal company directory with auth and filters `PHP` `MySQL`
-- [**patasdocerrado**](https://github.com/nikolasdehor/patasdocerrado) — Animal welfare web application `PHP`
-- [**Firewall-de-Rede-em-Docker**](https://github.com/nikolasdehor/Firewall-de-Rede-em-Docker) — Network firewall with iptables in Docker `Shell` `Docker`
+- 🍽️ [**CardapIA**](https://github.com/nikolasdehor/CardapIA) — Multi-agent restaurant menu analysis with RAG `Python` `FastAPI` `LangChain`
+- 🏥 **Saúde Sem Espera** — Real-time patient queue with QR codes and live tracking `Flutter` `Firebase`
+- 🏦 **IQD** — Process automation bot for Banco do Brasil `Python`
+- 🔌 **Plugin** — Internal productivity tool for Banco do Brasil
+- 🤖 **Corporate Bots** — WhatsApp automation for business decisions `Python` `Selenium`
+- 🛒 [**SysDelivery**](https://github.com/nikolasdehor/SysDelivery) — E-commerce delivery platform with cart, reviews and order tracking `PHP` `CodeIgniter` `MySQL`
 
 ---
 
