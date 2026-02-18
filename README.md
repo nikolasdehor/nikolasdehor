@@ -18,11 +18,6 @@ Currently studying Information Systems at IF Goiano.
 ![CLI](https://img.shields.io/badge/-CLI-000000?style=flat-square&logo=gnu-bash&logoColor=white)
 ![macOS](https://img.shields.io/badge/-macOS-000000?style=flat-square&logo=apple&logoColor=white)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/nikolasdehor)
-[![X](https://img.shields.io/badge/X-000?style=flat&logo=x&logoColor=white)](https://x.com/NikolasHor)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/nikolasdehor)
-[![Website](https://img.shields.io/badge/dehor.dev-000?style=flat&logo=safari&logoColor=white)](https://dehor.dev)
-
 ---
 
 #### Currently building
