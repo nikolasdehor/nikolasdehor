@@ -35,13 +35,16 @@ Currently studying Information Systems at IF Goiano.
 
 #### Open source contributions
 
-Active contributor to the [**OpenClaw**](https://github.com/openclaw) ecosystem — building open AI assistants for any OS and platform.
+Active contributor to the [**OpenClaw**](https://github.com/openclaw) and [**Synkra AIOX**](https://github.com/SynkraAI/aiox-core) ecosystems — building open AI assistants and AI-orchestrated dev tools.
 
 - 🦞 [**openclaw**](https://github.com/nikolasdehor/openclaw) — Personal AI assistant `TypeScript`
 - 🤖 [**nanobot**](https://github.com/nikolasdehor/nanobot) — Ultra-lightweight OpenClaw `Python`
 - ⚡ [**picoclaw**](https://github.com/nikolasdehor/picoclaw) — Tiny, fast, deployable anywhere `Go`
+- 🧠 [**aiox-core**](https://github.com/nikolasdehor/aios-core) — AI-Orchestrated System for Full Stack Development `JavaScript`
+- 📊 [**aiox-dashboard**](https://github.com/nikolasdehor/aios-dashboard) — AIOS Dashboard `TypeScript`
+- 🔧 [**mcp-ecosystem**](https://github.com/nikolasdehor/mcp-ecosystem) — Docker MCP Toolkit & IDE Configs for AIOS
 
-Also contributing to AI agent tooling: [aios-core](https://github.com/nikolasdehor/aios-core), [mcp-ecosystem](https://github.com/nikolasdehor/mcp-ecosystem), [vibetunnel](https://github.com/nikolasdehor/vibetunnel)
+Also contributing to: [vibetunnel](https://github.com/nikolasdehor/vibetunnel), [antigravity-awesome-skills](https://github.com/nikolasdehor/antigravity-awesome-skills)
 
 ---
 
