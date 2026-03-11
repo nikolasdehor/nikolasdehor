@@ -22,12 +22,29 @@ Currently studying Information Systems at IF Goiano.
 
 #### Currently building
 
+- 🌾 **FarmControl** — Farm management platform for agricultural operations `React` `TypeScript` `Supabase` `Tailwind` `Vercel`
+- 🧴 **Loja Forgiarini** — E-commerce for Forgiarini perfume store `React` `Vite` `Supabase` `Tailwind` `Vercel`
 - 🍽️ [**SaborIA**](https://github.com/nikolasdehor/SaborIA) — Multi-agent restaurant menu analysis with RAG `Python` `FastAPI` `LangChain`
 - 🏥 **Saúde Sem Espera** — Real-time patient queue with QR codes and live tracking `Flutter` `Firebase`
 - 🏦 **IQD** — Process automation bot for Banco do Brasil `Python`
 - 🔌 **Plugin** — Internal productivity tool for Banco do Brasil
 - 🤖 **Corporate Bots** — WhatsApp automation for business decisions `Python` `Selenium`
 - 🛒 [**SysDelivery**](https://github.com/nikolasdehor/SysDelivery) — E-commerce delivery platform with cart, reviews and order tracking `PHP` `CodeIgniter` `MySQL`
+
+---
+
+#### Open source contributions
+
+Active contributor to the [**OpenClaw**](https://github.com/openclaw) and [**Synkra AIOX**](https://github.com/SynkraAI/aiox-core) ecosystems — building open AI assistants and AI-orchestrated dev tools.
+
+- 🦞 [**openclaw**](https://github.com/nikolasdehor/openclaw) — Personal AI assistant `TypeScript`
+- 🤖 [**nanobot**](https://github.com/nikolasdehor/nanobot) — Ultra-lightweight OpenClaw `Python`
+- ⚡ [**picoclaw**](https://github.com/nikolasdehor/picoclaw) — Tiny, fast, deployable anywhere `Go`
+- 🧠 [**aiox-core**](https://github.com/nikolasdehor/aios-core) — AI-Orchestrated System for Full Stack Development `JavaScript`
+- 📊 [**aiox-dashboard**](https://github.com/nikolasdehor/aios-dashboard) — AIOS Dashboard `TypeScript`
+- 🔧 [**mcp-ecosystem**](https://github.com/nikolasdehor/mcp-ecosystem) — Docker MCP Toolkit & IDE Configs for AIOS
+
+Also contributing to: [vibetunnel](https://github.com/nikolasdehor/vibetunnel), [antigravity-awesome-skills](https://github.com/nikolasdehor/antigravity-awesome-skills)
 
 ---
 
