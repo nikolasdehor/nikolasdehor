@@ -22,12 +22,26 @@ Currently studying Information Systems at IF Goiano.
 
 #### Currently building
 
+- 🌾 **FarmControl** — Farm management platform for agricultural operations `React` `TypeScript` `Supabase` `Tailwind` `Vercel`
+- 🧴 **Loja Forgiarini** — E-commerce for Forgiarini perfume store `React` `Vite` `Supabase` `Tailwind` `Vercel`
 - 🍽️ [**SaborIA**](https://github.com/nikolasdehor/SaborIA) — Multi-agent restaurant menu analysis with RAG `Python` `FastAPI` `LangChain`
 - 🏥 **Saúde Sem Espera** — Real-time patient queue with QR codes and live tracking `Flutter` `Firebase`
 - 🏦 **IQD** — Process automation bot for Banco do Brasil `Python`
 - 🔌 **Plugin** — Internal productivity tool for Banco do Brasil
 - 🤖 **Corporate Bots** — WhatsApp automation for business decisions `Python` `Selenium`
 - 🛒 [**SysDelivery**](https://github.com/nikolasdehor/SysDelivery) — E-commerce delivery platform with cart, reviews and order tracking `PHP` `CodeIgniter` `MySQL`
+
+---
+
+#### Open source contributions
+
+Active contributor to the [**OpenClaw**](https://github.com/openclaw) ecosystem — building open AI assistants for any OS and platform.
+
+- 🦞 [**openclaw**](https://github.com/nikolasdehor/openclaw) — Personal AI assistant `TypeScript`
+- 🤖 [**nanobot**](https://github.com/nikolasdehor/nanobot) — Ultra-lightweight OpenClaw `Python`
+- ⚡ [**picoclaw**](https://github.com/nikolasdehor/picoclaw) — Tiny, fast, deployable anywhere `Go`
+
+Also contributing to AI agent tooling: [aios-core](https://github.com/nikolasdehor/aios-core), [mcp-ecosystem](https://github.com/nikolasdehor/mcp-ecosystem), [vibetunnel](https://github.com/nikolasdehor/vibetunnel)
 
 ---
 
