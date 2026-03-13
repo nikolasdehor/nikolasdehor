@@ -24,10 +24,10 @@ Studying Information Systems at IF Goiano.
 
 #### Currently building
 
-- 🌾 **FarmControl** — Farm management platform for agricultural operations `React` `TypeScript` `Supabase` `Tailwind` `Vercel`
-- 🧴 **Loja Forgiarini** — E-commerce for Forgiarini perfume store `React` `Vite` `Supabase` `Tailwind` `Vercel`
+- 🌾 [FarmControl](https://farmcontrol.vercel.app) — Farm management platform for agricultural operations `React` `TypeScript` `Supabase` `Tailwind` `Vercel`
+- 🧴 [Loja Forgiarini](https://forgiariniparfum.vercel.app) — E-commerce for Forgiarini perfume store `React` `Vite` `Supabase` `Tailwind` `Vercel`
 - 🍽️ [**SaborIA**](https://github.com/nikolasdehor/SaborIA) — Multi-agent restaurant menu analysis with RAG `Python` `FastAPI` `LangChain`
-- 🏥 **Saúde Sem Espera** — Real-time patient queue with QR codes and live tracking `Flutter` `Firebase`
+- 🏥 [Saúde Sem Espera](https://app.saudesemespera.com) — Real-time patient queue with QR codes and live tracking `Flutter` `Firebase`
 - 🏦 **IQD** — Process automation bot for Banco do Brasil `Python`
 - 🔌 **Plugin** — Internal productivity tool for Banco do Brasil
 - 🤖 **Corporate Bots** — WhatsApp automation for business decisions `Python` `Selenium`
