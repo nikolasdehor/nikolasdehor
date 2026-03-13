@@ -70,8 +70,4 @@ Also contributing to: [vibetunnel](https://github.com/nikolasdehor/vibetunnel), 
 
 ---
 
-<img src="https://github-readme-stats.vercel.app/api?username=nikolasdehor&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="49%" /> <img src="https://github-readme-streak-stats.herokuapp.com/?user=nikolasdehor&theme=tokyonight&hide_border=true" width="49%" />
-
----
-
 <sub>Goiânia, Brazil · [dehor.dev](https://dehor.dev) · [@NikolasHor](https://twitter.com/NikolasHor)</sub>
