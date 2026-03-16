@@ -41,7 +41,7 @@ Currently building multi-agent AI systems at **Cast** with OpenAI Agents SDK.
 
 - 🌾 [FarmControl](https://farmcontrol.vercel.app) — Farm management platform for agricultural operations `React` `Supabase` `Tailwind`
 - 🧴 [Loja Forgiarini](https://forgiariniparfum.vercel.app) — E-commerce for Forgiarini perfume store `React` `Vite` `Supabase`
-- 🍽️ [**SaborIA**](https://github.com/nikolasdehor/SaborIA) — Multi-agent restaurant menu analysis with RAG `Python` `FastAPI` `LangChain`
+- 🍽️ [**SaborIA**](https://saboria.streamlit.app/) — Multi-agent restaurant menu analysis with RAG `Python` `FastAPI` `LangChain`
 - 🏥 [Saúde Sem Espera](https://app.saudesemespera.com) — Real-time patient queue with QR codes and live tracking `Flutter` `Firebase`
 - 🏦 **IQD** — Process automation bot for Banco do Brasil `Python`
 - 🔌 **Plugin** — Internal productivity tool for Banco do Brasil
