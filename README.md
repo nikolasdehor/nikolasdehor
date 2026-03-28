@@ -18,10 +18,10 @@ I build AI-powered tools and open source solutions. Creator of [MCP Fiscal Brasi
 
 <p align="center">
   <a href="https://github.com/nikolasdehor/mcp-fiscal-brasil">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=nikolasdehor&repo=mcp-fiscal-brasil&theme=dark&hide_border=true" />
+    <img src="https://gh-readme-stats-nine.vercel.app/api/pin/?username=nikolasdehor&repo=mcp-fiscal-brasil&theme=dark&hide_border=true" />
   </a>
   <a href="https://github.com/nikolasdehor/visual-eyes">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=nikolasdehor&repo=visual-eyes&theme=dark&hide_border=true" />
+    <img src="https://gh-readme-stats-nine.vercel.app/api/pin/?username=nikolasdehor&repo=visual-eyes&theme=dark&hide_border=true" />
   </a>
 </p>
 
@@ -75,8 +75,8 @@ I build AI-powered tools and open source solutions. Creator of [MCP Fiscal Brasi
 ## Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nikolasdehor&show_icons=true&theme=dark&hide_border=true&count_private=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nikolasdehor&layout=compact&theme=dark&hide_border=true" height="165" />
+  <img src="https://gh-readme-stats-nine.vercel.app/api?username=nikolasdehor&show_icons=true&theme=dark&hide_border=true&count_private=true" height="165" />
+  <img src="https://gh-readme-stats-nine.vercel.app/api/top-langs/?username=nikolasdehor&layout=compact&theme=dark&hide_border=true" height="165" />
 </p>
 
 <p align="center">
