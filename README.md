@@ -17,9 +17,11 @@ Building open source tools for Brazilian developers.
 
 ### Open Source
 
-Contributed to [openclaw](https://github.com/openclaw/openclaw), [aios-core](https://github.com/SynkraAI/aios-core), and [picoclaw](https://github.com/sipeed/picoclaw).
+- **[nanobot](https://github.com/HKUDS/nanobot)** (HKUDS · 37k+ stars) - Ultra-lightweight personal AI assistant with agent capabilities in ~4,000 lines. Official team member. 36 commits - security hardening, memory system, channel fixes, fallback architecture.
 
-400+ PR reviews · 29 PRs merged · 100+ issues filed
+Also contributed to [openclaw](https://github.com/openclaw/openclaw), [aios-core](https://github.com/SynkraAI/aios-core), and [picoclaw](https://github.com/sipeed/picoclaw).
+
+400+ PR reviews · 36+ commits on 37k-star repo · 29 PRs submitted · 100+ issues filed
 
 ### Stack
 
