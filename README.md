@@ -17,8 +17,9 @@ Contributed to repos with 100k+ combined stars:
 | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | ![stars](https://img.shields.io/github/stars/HKUDS/nanobot?style=flat&label=%E2%AD%90) | Team member - 16+ PRs (security, Discord, fallback arch) |
 | [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) | ![stars](https://img.shields.io/github/stars/bmad-code-org/BMAD-METHOD?style=flat&label=%E2%AD%90) | 12+ PRs (story templates, YAML, ATDD workflow) |
 | [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | ![stars](https://img.shields.io/github/stars/anthropics/claude-plugins-official?style=flat&label=%E2%AD%90) | PR merged - Visual Eyes in official registry |
-| [SynkraAI/aiox-core](https://github.com/SynkraAI/aiox-core) | - | 104+ PRs, 88+ issues |
-| [amantus-ai/vibetunnel](https://github.com/amantus-ai/vibetunnel) | - | 8 PRs |
+| [SynkraAI/aiox-core](https://github.com/SynkraAI/aiox-core) | ![stars](https://img.shields.io/github/stars/SynkraAI/aiox-core?style=flat&label=%E2%AD%90) | 104+ PRs, 88+ issues |
+| [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | ![stars](https://img.shields.io/github/stars/sipeed/picoclaw?style=flat&label=%E2%AD%90) | 3 PRs, 260+ code reviews |
+| [amantus-ai/vibetunnel](https://github.com/amantus-ai/vibetunnel) | ![stars](https://img.shields.io/github/stars/amantus-ai/vibetunnel?style=flat&label=%E2%AD%90) | 8 PRs |
 
 **150+ PRs submitted · 170+ issues filed · 400+ code reviews**
 
@@ -41,10 +42,6 @@ First MCP server for Brazil's fiscal system - CNPJ, NFe, SPED, eSocial.
 **[Semtree](https://github.com/nikolasdehor/semtree)** [![PyPI](https://img.shields.io/pypi/v/semtree)](https://pypi.org/project/semtree/)
 Semantic code trees for AI assistants. Works with Claude Code, Cursor, Copilot.
 `Python` `tree-sitter` `SQLite`
-
-**[picoclaw](https://github.com/nikolasdehor/picoclaw)**
-Go framework for multi-platform AI agents - Discord, Telegram, WhatsApp, IRC, Matrix.
-`Go` `Cobra`
 
 ---
 
