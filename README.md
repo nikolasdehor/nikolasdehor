@@ -1,28 +1,64 @@
-# Nikolas de Hor
+# Hey, I'm Nikolas de Hor 👋
 
-Full-Stack & AI Engineer from Brazil.
+AI agent builder from Goiânia, Brazil. COO @ FOR6 Solutions.
 
-Building open source tools for Brazilian developers.
+I make stuff that runs in production — agents, MCP servers, Claude Code plugins.
 
-[dehor.dev](https://dehor.dev) · [LinkedIn](https://linkedin.com/in/nikolasdehor)
+[dehor.dev](https://dehor.dev) · [LinkedIn](https://linkedin.com/in/nikolasdehor) · [nikolasdehor79@gmail.com](mailto:nikolasdehor79@gmail.com)
 
 ---
 
-### Projects
+## 🚀 Open Source Highlights
 
-- **[Semtree](https://github.com/nikolasdehor/semtree)** - Semantic code trees for AI assistants. Indexes codebases with tree-sitter and provides token-optimized context to Claude Code, Cursor, Copilot. [PyPI](https://pypi.org/project/semtree/) · [Docs](https://nikolasdehor.github.io/semtree/)
-- **[MCP Fiscal Brasil](https://github.com/nikolasdehor/mcp-fiscal-brasil)** - First MCP server for Brazil's fiscal system. Query CNPJ, NFe, SPED, eSocial. Published on [PyPI](https://pypi.org/project/mcp-fiscal-brasil/).
-- **[Visual Eyes](https://github.com/nikolasdehor/visual-eyes)** - Claude Code plugin that captures screenshots, analyzes UI visually, and auto-fixes layout bugs.
-- **[ShieldCode](https://github.com/nikolasdehor/shieldcode)** - Security hardening and error handling expertise for Claude Code. Prevents OWASP Top 10 vulnerabilities.
+Contributed to repos with 100k+ combined stars:
 
-### Open Source
+| Repo | Stars | Contribution |
+|------|-------|--------------|
+| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | ![stars](https://img.shields.io/github/stars/HKUDS/nanobot?style=flat&label=%E2%AD%90) | Team member - 16+ PRs (security, Discord, fallback arch) |
+| [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) | ![stars](https://img.shields.io/github/stars/bmad-code-org/BMAD-METHOD?style=flat&label=%E2%AD%90) | 12+ PRs (story templates, YAML, ATDD workflow) |
+| [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | ![stars](https://img.shields.io/github/stars/anthropics/claude-plugins-official?style=flat&label=%E2%AD%90) | PR merged - Visual Eyes in official registry |
+| [SynkraAI/aiox-core](https://github.com/SynkraAI/aiox-core) | - | 104+ PRs, 88+ issues |
+| [amantus-ai/vibetunnel](https://github.com/amantus-ai/vibetunnel) | - | 8 PRs |
 
-- **[nanobot](https://github.com/HKUDS/nanobot)** (HKUDS · 37k+ stars) - Ultra-lightweight personal AI assistant with agent capabilities in ~4,000 lines. Official team member. 36 commits - security hardening, memory system, channel fixes, fallback architecture.
+**150+ PRs submitted · 170+ issues filed · 400+ code reviews**
 
-Also contributed to [openclaw](https://github.com/openclaw/openclaw), [aios-core](https://github.com/SynkraAI/aios-core), and [picoclaw](https://github.com/sipeed/picoclaw).
+---
 
-400+ PR reviews · 36+ commits on 37k-star repo · 29 PRs submitted · 100+ issues filed
+## 🛠️ My Projects
 
-### Stack
+**[Visual Eyes](https://github.com/nikolasdehor/visual-eyes)** - in the [Anthropic Plugin Registry](https://github.com/anthropics/claude-plugins-official)
+Claude Code plugin that gives your AI eyes 👁️ - screenshot, analyze UI, auto-fix layout bugs.
+`Playwright` `TypeScript` `pixelmatch`
 
-TypeScript · Python · Go · React · Flutter · FastAPI · Docker · PostgreSQL
+**[ShieldCode](https://github.com/nikolasdehor/shieldcode)** - in the [Anthropic Plugin Registry](https://github.com/anthropics/claude-plugins-official)
+Security hardening for Claude Code. OWASP Top 10 coverage, 8 security rules.
+`Claude Code Plugin` `OWASP`
+
+**[MCP Fiscal Brasil](https://github.com/nikolasdehor/mcp-fiscal-brasil)** [![PyPI](https://img.shields.io/pypi/v/mcp-fiscal-brasil)](https://pypi.org/project/mcp-fiscal-brasil/)
+First MCP server for Brazil's fiscal system - CNPJ, NFe, SPED, eSocial.
+`Python` `FastMCP` `MCP`
+
+**[Semtree](https://github.com/nikolasdehor/semtree)** [![PyPI](https://img.shields.io/pypi/v/semtree)](https://pypi.org/project/semtree/)
+Semantic code trees for AI assistants. Works with Claude Code, Cursor, Copilot.
+`Python` `tree-sitter` `SQLite`
+
+**[picoclaw](https://github.com/nikolasdehor/picoclaw)**
+Go framework for multi-platform AI agents - Discord, Telegram, WhatsApp, IRC, Matrix.
+`Go` `Cobra`
+
+---
+
+## 💻 Stack
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
+
+---
+
+Goiânia, GO - Brazil
