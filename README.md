@@ -1,6 +1,6 @@
 # Hey, I'm Nikolas de Hor 👋
 
-AI agent builder from Goiânia, Brazil. COO @ FOR6 Solutions.
+AI agent builder from Goiânia, Brazil. COO @ [FOR6 Solutions](https://github.com/For6Solutions).
 
 I make stuff that runs in production — agents, MCP servers, Claude Code plugins.
 
