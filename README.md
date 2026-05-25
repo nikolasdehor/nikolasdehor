@@ -1,61 +1,54 @@
-# Hey, I'm Nikolas de Hor 👋
+# Nikolas de Hor
 
-AI agent builder from Goiânia, Brazil. Co-Founder [For6 Solutions](https://github.com/For6Solutions).
+AI systems engineer building production multi-agent infrastructure, MCP servers, and developer tooling.
 
-I make stuff that runs in production — agents, MCP servers, Claude Code plugins.
+COO and co-founder at [FOR6 Solutions](https://github.com/For6Solutions), based in Goiânia, Brazil. I work where AI agents meet real software operations: browser automation, security hardening, code intelligence, fiscal workflows, and AI-assisted development systems that need to run reliably outside demos.
 
-[dehor.dev](https://dehor.dev) · [LinkedIn](https://linkedin.com/in/nikolasdehor) · [nikolasdehor79@gmail.com](mailto:nikolasdehor79@gmail.com)
+[dehor.dev](https://dehor.dev) · [LinkedIn](https://br.linkedin.com/in/nikolasdehor) · [Email](mailto:nikolasdehor79@gmail.com)
 
----
+## Selected Work
 
-## 🚀 Open Source Highlights
+**[Visual Eyes](https://github.com/nikolasdehor/visual-eyes)**
 
-Contributed to repos with 100k+ combined stars:
+Claude Code plugin in the [Anthropic Plugin Registry](https://github.com/anthropics/claude-plugins-official) for visual inspection of running web apps: screenshots, UI analysis, regression checks, and layout debugging.
 
-| Repo | Stars | Contribution |
-|------|-------|--------------|
-| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | ![stars](https://img.shields.io/github/stars/HKUDS/nanobot?style=flat&label=%E2%AD%90) | Team member - 16+ PRs (security, Discord, fallback arch) |
-| [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) | ![stars](https://img.shields.io/github/stars/bmad-code-org/BMAD-METHOD?style=flat&label=%E2%AD%90) | 12+ PRs (story templates, YAML, ATDD workflow) |
-| [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | ![stars](https://img.shields.io/github/stars/anthropics/claude-plugins-official?style=flat&label=%E2%AD%90) | PR merged - Visual Eyes in official registry |
-| [SynkraAI/aiox-core](https://github.com/SynkraAI/aiox-core) | ![stars](https://img.shields.io/github/stars/SynkraAI/aiox-core?style=flat&label=%E2%AD%90) | 104+ PRs, 88+ issues |
-| [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | ![stars](https://img.shields.io/github/stars/sipeed/picoclaw?style=flat&label=%E2%AD%90) | 3 PRs, 260+ code reviews |
-| [amantus-ai/vibetunnel](https://github.com/amantus-ai/vibetunnel) | ![stars](https://img.shields.io/github/stars/amantus-ai/vibetunnel?style=flat&label=%E2%AD%90) | 8 PRs |
+`TypeScript` `Playwright` `pixelmatch` `Claude Code`
 
-**150+ PRs submitted · 170+ issues filed · 400+ code reviews**
+**[ShieldCode](https://github.com/nikolasdehor/shieldcode)**
 
----
+Security-focused Claude Code plugin for AI-assisted development workflows, with OWASP-oriented checks and production error-handling guidance.
 
-## 🛠️ My Projects
-
-**[Visual Eyes](https://github.com/nikolasdehor/visual-eyes)** - in the [Anthropic Plugin Registry](https://github.com/anthropics/claude-plugins-official)
-Claude Code plugin that gives your AI eyes 👁️ - screenshot, analyze UI, auto-fix layout bugs.
-`Playwright` `TypeScript` `pixelmatch`
-
-**[ShieldCode](https://github.com/nikolasdehor/shieldcode)** - in the [Anthropic Plugin Registry](https://github.com/anthropics/claude-plugins-official)
-Security hardening for Claude Code. OWASP Top 10 coverage, 8 security rules.
-`Claude Code Plugin` `OWASP`
+`Security` `OWASP` `Claude Code Plugin`
 
 **[MCP Fiscal Brasil](https://github.com/nikolasdehor/mcp-fiscal-brasil)** [![PyPI](https://img.shields.io/pypi/v/mcp-fiscal-brasil)](https://pypi.org/project/mcp-fiscal-brasil/)
-First MCP server for Brazil's fiscal system - CNPJ, NFe, SPED, eSocial.
-`Python` `FastMCP` `MCP`
+
+MCP server for Brazilian fiscal workflows, including CNPJ, NFe, NFSe, SPED, and eSocial access through natural language interfaces.
+
+`Python` `FastMCP` `MCP` `Brazil`
 
 **[Semtree](https://github.com/nikolasdehor/semtree)** [![PyPI](https://img.shields.io/pypi/v/semtree)](https://pypi.org/project/semtree/)
-Semantic code trees for AI assistants. Works with Claude Code, Cursor, Copilot.
+
+Semantic code-tree tooling for AI assistants working with large codebases across Claude Code, Cursor, and Copilot-style workflows.
+
 `Python` `tree-sitter` `SQLite`
 
----
+## Open Source Signal
 
-## 💻 Stack
+- Team member and contributor on [HKUDS/nanobot](https://github.com/HKUDS/nanobot), focused on security, Discord workflows, and fallback architecture.
+- Contributor to [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD), including story templates, YAML workflows, and ATDD improvements.
+- Merged plugin contribution in [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official).
+- 150+ pull requests submitted, 170+ issues filed, and 400+ code reviews across AI tooling, agent infrastructure, and developer workflows.
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
+## Focus Areas
 
----
+- Multi-agent systems that run in production
+- MCP servers and agent-facing APIs
+- AI-assisted development tools
+- Security hardening for AI coding workflows
+- Browser automation, UI validation, and code intelligence
+
+## Stack
+
+`TypeScript` `Python` `Go` `React` `FastAPI` `Docker` `AWS` `Flutter`
 
 Goiânia, GO - Brazil
