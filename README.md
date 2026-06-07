@@ -1,27 +1,43 @@
-# Hi, I'm Nikolas
+# Nikolas de Hor
 
-Goiânia, Brazil | AI systems engineer | COO & co-founder at [FOR6 Solutions](https://github.com/For6Solutions)
+AI engineer building agent infrastructure, MCP servers, and multimodal knowledge systems.
 
-I build agent infrastructure, MCP servers, and developer tools for real software operations.
+COO and co-founder at [FOR6 Solutions](https://github.com/For6Solutions), based in Goiania, Brazil. I work on the layer where agents stop being demos and start operating real software: browser automation, code intelligence, security review, fiscal workflows, and production-grade developer tooling.
 
-[Website](https://dehor.dev) · [LinkedIn](https://br.linkedin.com/in/nikolasdehor) · [Email](mailto:nikolasdehor79@gmail.com)
+[dehor.dev](https://dehor.dev) · [DeHor Labs](https://github.com/DeHor-Labs) · [LinkedIn](https://br.linkedin.com/in/nikolasdehor) · [Email](mailto:nikolasdehor79@gmail.com)
 
 ## Start Here
 
-- **[Visual Eyes](https://github.com/nikolasdehor/visual-eyes)** - visual inspection for running web apps in Claude Code.
-- **[TranscreveAI](https://github.com/nikolasdehor/transcreve-ai)** - video links into searchable multimodal knowledge dossiers.
-- **[MCP Fiscal Brasil](https://github.com/nikolasdehor/mcp-fiscal-brasil)** - Brazilian fiscal workflows through MCP.
-- **[Semtree](https://github.com/nikolasdehor/semtree)** - semantic code-tree tooling for AI assistants.
-- **[ShieldCode](https://github.com/nikolasdehor/shieldcode)** - security checks for AI-assisted development workflows.
+### Agent Infrastructure
+
+- **[TranscreveAI](https://github.com/DeHor-Labs/transcreve-ai)** - video links into searchable multimodal dossiers, content packs, skill drafts, and RAG-ready knowledge.
+- **[Visual Eyes](https://github.com/DeHor-Labs/visual-eyes)** - visual inspection for running web apps in Claude Code.
+- **[Semtree](https://github.com/DeHor-Labs/semtree)** - semantic code-tree tooling for AI assistants working with large codebases.
+
+### MCP And Brazil
+
+- **[MCP Fiscal Brasil](https://github.com/DeHor-Labs/mcp-fiscal-brasil)** - Brazilian fiscal workflows through MCP: CNPJ, NFe, NFSe, SPED, eSocial, and related automations.
+
+### Security And Review
+
+- **[ShieldCode](https://github.com/DeHor-Labs/shieldcode)** - security hardening and production-grade error handling for AI-assisted development workflows.
+- **[agent-stack-public](https://github.com/DeHor-Labs/agent-stack-public)** - public map of a Codex and Claude Code agent stack, sanitized for reuse.
+
+## Production Signal
+
+- Built and run multi-agent workflows across Codex, Claude Code, MCP servers, local CLIs, browser automation, and GitHub review loops.
+- Shipped agent-ready video intelligence in TranscreveAI: source probing, Instagram/caption intake, multimodal dossiers, content/skill templates, batch mode, MCP surface, and RAG indexing.
+- Maintain Brazilian infra-oriented tools, including MCP Fiscal Brasil and accounting/fiscal automation experiments.
+- Contributed to open source projects including [HKUDS/nanobot](https://github.com/HKUDS/nanobot), [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD), and [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official).
 
 ## Current Focus
 
-Multi-agent systems, MCP, browser automation, code intelligence, security hardening, and Brazilian fiscal infrastructure.
-
-## Open Source
-
-Contributor to [HKUDS/nanobot](https://github.com/HKUDS/nanobot), [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD), and [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official).
+- Agent-ready video and document intelligence
+- MCP servers and tool surfaces for real workflows
+- AI code review, security hardening, and CI automation
+- Browser/UI inspection for coding agents
+- Brazilian fiscal and business automation
 
 ## Stack
 
-TypeScript · Python · Go · React · FastAPI · Docker · AWS · Flutter
+`Python` · `TypeScript` · `Go` · `React` · `FastAPI` · `Docker` · `SQLite/Postgres` · `MCP` · `RAG` · `Flutter`
