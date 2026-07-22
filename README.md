@@ -1,27 +1,25 @@
 # Nikolas de Hor
 
-I build agent infrastructure for software that has to run outside the demo.
+I build agent infrastructure and MCP servers for production, not demos.
 
-COO and co-founder at [FOR6 Solutions](https://github.com/For6Solutions). Founder of [DeHor Labs](https://github.com/DeHor-Labs). Based in Goiania, Brazil.
+COO and co-founder at [FOR6 Solutions](https://github.com/For6Solutions), founder of [DeHor Labs](https://github.com/DeHor-Labs).
 
-Most of my work sits between AI agents and real operating constraints: tool contracts, MCP servers, browser state, review gates, multimodal context, and domain workflows that need to be inspectable.
+## Featured Projects
 
-[dehor.dev](https://dehor.dev) | [DeHor Labs](https://github.com/DeHor-Labs) | [LinkedIn](https://br.linkedin.com/in/nikolasdehor) | [Email](mailto:nikolasdehor79@gmail.com)
+- **[mcp-fiscal-brasil](https://github.com/DeHor-Labs/mcp-fiscal-brasil)** (128 stars, live on [PyPI](https://pypi.org/project/mcp-fiscal-brasil/)) - MCP server for Brazil's fiscal system: CNPJ, NF-e, NFS-e, CT-e, SPED, eSocial, Simples Nacional. 44 tools, offline tables, zero signup.
+- **[mcp-agro-brasil](https://github.com/DeHor-Labs/mcp-agro-brasil)** (live on [PyPI](https://pypi.org/project/mcp-agro-brasil/)) - MCP server for Brazilian agribusiness data: cattle, soy, corn, and milk quotes with unit conversions.
+- **[mcp-juridico-brasil](https://github.com/DeHor-Labs/mcp-juridico-brasil)** - modular legal platform over MCP; case-tracking module built on the CNJ's public DataJud API.
+- **[transcreve-ai](https://github.com/DeHor-Labs/transcreve-ai)** - turns video into multimodal, RAG-ready knowledge: transcripts, frames, OCR, and evidence.
+- **[visual-eyes](https://github.com/DeHor-Labs/visual-eyes)** - browser-level visual inspection for Claude Code and coding agents.
 
-## Current Work
+## Open Source
 
-- [Agent Capability Router](https://github.com/DeHor-Labs/agent-capability-router): capability selection for Codex and Claude Code.
-- [TranscreveAI](https://github.com/DeHor-Labs/transcreve-ai): multimodal video dossiers and RAG-ready knowledge.
-- [MCP Fiscal Brasil](https://github.com/DeHor-Labs/mcp-fiscal-brasil): Brazilian fiscal workflows through MCP.
-- [Visual Eyes](https://github.com/DeHor-Labs/visual-eyes): browser-level inspection for coding agents.
-- [Semtree](https://github.com/DeHor-Labs/semtree): semantic code maps for large repositories.
-
-## Notes
-
-- I prefer small tools with clear contracts over large prompt systems.
-- I care about evidence, failure modes, and handoff quality.
-- I am especially interested in agent workflows that connect code, browser behavior, memory, and production operations.
+Merged pull requests in [nanobot](https://github.com/HKUDS/nanobot), [BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD), [vibetunnel](https://github.com/amantus-ai/vibetunnel), and [aiox-core](https://github.com/SynkraAI/aiox-core). Also contribute to [openclaw](https://github.com/openclaw/openclaw) and [picoclaw](https://github.com/sipeed/picoclaw).
 
 ## Stack
 
-Python, TypeScript, Go, React, FastAPI, Docker, Postgres, SQLite, MCP, RAG, Flutter.
+Python, TypeScript, Go, MCP, FastAPI, React, Docker, Postgres, SQLite, Flutter.
+
+---
+
+Goiânia, Brazil - [dehor.dev](https://dehor.dev) - [Blog](https://news.dehor.com.br) - [LinkedIn](https://br.linkedin.com/in/nikolasdehor) - [nikolasdehor79@gmail.com](mailto:nikolasdehor79@gmail.com)
