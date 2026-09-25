@@ -12,7 +12,7 @@
 
 I build the layer between an AI model and a real workflow: agent runtimes, MCP servers, RAG pipelines, multimodal knowledge systems, automation, and full-stack products. I like systems with a clear failure mode, observable decisions, and a way to prove what happened.
 
-I am COO and co-founder of [FOR6 Solutions](https://github.com/For6Solutions) and founder of [DeHor Labs](https://github.com/DeHor-Labs), based in Goiânia, Brazil.
+I am COO and co-founder of [FOR6 Solutions](https://github.com/For6Solutions) and founder of [DeHor Labs](https://github.com/DeHor-Labs), based in São Paulo, Brazil.
 
 ## What I build
 
@@ -86,4 +86,4 @@ The wider project history also includes **GerminaVision**, **Life Gamification M
 
 ---
 
-Goiânia, Brazil · [dehor.dev](https://dehor.dev) · [news.dehor.com.br](https://news.dehor.com.br) · [LinkedIn](https://br.linkedin.com/in/nikolasdehor) · [nikolasdehor79@gmail.com](mailto:nikolasdehor79@gmail.com)
+São Paulo, Brazil · [dehor.dev](https://dehor.dev) · [news.dehor.com.br](https://news.dehor.com.br) · [LinkedIn](https://br.linkedin.com/in/nikolasdehor) · [nikolasdehor79@gmail.com](mailto:nikolasdehor79@gmail.com)
