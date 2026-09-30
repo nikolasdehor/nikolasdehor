@@ -5,6 +5,7 @@
 
 <p align="center">
   <a href="https://dehor.dev">Portfolio</a> ·
+  <a href="https://news.dehor.com.br/">DeHor News</a> ·
   <a href="https://github.com/DeHor-Labs">DeHor Labs</a> ·
   <a href="https://br.linkedin.com/in/nikolasdehor">LinkedIn</a> ·
   <a href="mailto:nikolasdehor79@gmail.com">Email</a>
@@ -13,6 +14,8 @@
 I build the layer between an AI model and a real workflow: agent runtimes, MCP servers, RAG pipelines, multimodal knowledge systems, automation, and full-stack products. I like systems with a clear failure mode, observable decisions, and a way to prove what happened.
 
 I am COO and co-founder of [FOR6 Solutions](https://github.com/For6Solutions) and founder of [DeHor Labs](https://github.com/DeHor-Labs), based in São Paulo, Brazil.
+
+For the complete curated catalog, project status, and public evidence, see the [portfolio](https://dehor.dev/?lang=en#projetos) or its [English text version](https://dehor.dev/index.en.md). [DeHor News](https://news.dehor.com.br/) is my editorial publication. Collective and upstream work keep their own attribution.
 
 ## Selected open-source work
 
