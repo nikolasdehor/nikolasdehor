@@ -1,284 +1,270 @@
-// Gera os cartões SVG do README (assets/*.svg). Sem dependências: node scripts/build-svgs.mjs
-// Texto desenhado com uma fonte bitmap própria (abaixo), sprites do mundo pixel de dehor.dev.
-import { writeFileSync, mkdirSync } from "node:fs";
+// Gera o banner e os cartões SVG do README (assets/*.svg). Sem dependências: node scripts/build-svgs.mjs
+// Identidade v3 de dehor.dev: fundo noturno, teal como acento, âmbar pontual, Geist embutida (subset em scripts/fonts).
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const OUT = join(dirname(fileURLToPath(import.meta.url)), "..", "assets");
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+const OUT = join(ROOT, "assets");
 mkdirSync(OUT, { recursive: true });
 
 const C = {
-  bg: "#0b0f14", surf: "#10161d", dot: "#1a222c", line: "#1f2a36", D: "#151c25",
-  w: "#e6edf3", s: "#93a1b0", g: "#2a3644", t: "#2dd4bf", T: "#0f766e",
-  a: "#f2b84b", A: "#b7791f", b: "#7a4a2a", k: "#0b0f14", p: "#f4a6b4", c: "#d9774b", C: "#a8512f",
+  bg: "#0b0c0e", surf: "#111215", line: "#1f2126", edge: "#2a2d33", dot: "#1c1e23",
+  w: "#ededef", s: "#8b8d94", m: "#5d6068", t: "#2dd4bf", a: "#f2b84b",
 };
 
-// ---------- fonte bitmap (cap 7 linhas, descendentes até a linha 8) ----------
-const r7 = (s) => s.split(" ");
-const FONT = {
-  A: r7(".###. #...# #...# ##### #...# #...# #...#"), B: r7("####. #...# #...# ####. #...# #...# ####."),
-  C: r7(".###. #...# #.... #.... #.... #...# .###."), D: r7("####. #...# #...# #...# #...# #...# ####."),
-  E: r7("##### #.... #.... ####. #.... #.... #####"), F: r7("##### #.... #.... ####. #.... #.... #...."),
-  G: r7(".###. #...# #.... #.### #...# #...# .####"), H: r7("#...# #...# #...# ##### #...# #...# #...#"),
-  I: r7("### .#. .#. .#. .#. .#. ###"), J: r7("..### ...#. ...#. ...#. #..#. #..#. .##.."),
-  K: r7("#...# #..#. #.#.. ##... #.#.. #..#. #...#"), L: r7("#.... #.... #.... #.... #.... #.... #####"),
-  M: r7("#...# ##.## #.#.# #.#.# #...# #...# #...#"), N: r7("#...# ##..# #.#.# #..## #...# #...# #...#"),
-  O: r7(".###. #...# #...# #...# #...# #...# .###."), P: r7("####. #...# #...# ####. #.... #.... #...."),
-  Q: r7(".###. #...# #...# #...# #.#.# #..#. .##.#"), R: r7("####. #...# #...# ####. #.#.. #..#. #...#"),
-  S: r7(".#### #.... #.... .###. ....# ....# ####."), T: r7("##### ..#.. ..#.. ..#.. ..#.. ..#.. ..#.."),
-  U: r7("#...# #...# #...# #...# #...# #...# .###."), V: r7("#...# #...# #...# #...# #...# .#.#. ..#.."),
-  W: r7("#...# #...# #...# #.#.# #.#.# ##.## #...#"), X: r7("#...# #...# .#.#. ..#.. .#.#. #...# #...#"),
-  Y: r7("#...# #...# .#.#. ..#.. ..#.. ..#.. ..#.."), Z: r7("##### ....# ...#. ..#.. .#... #.... #####"),
-  0: r7(".###. #...# #..## #.#.# ##..# #...# .###."), 1: r7(".#. ##. .#. .#. .#. .#. ###"),
-  2: r7(".###. #...# ....# ...#. ..#.. .#... #####"), 3: r7("####. ....# ....# .###. ....# ....# ####."),
-  4: r7("...#. ..##. .#.#. #..#. ##### ...#. ...#."), 5: r7("##### #.... ####. ....# ....# #...# .###."),
-  6: r7(".###. #.... #.... ####. #...# #...# .###."), 7: r7("##### ....# ...#. ..#.. .#... .#... .#..."),
-  8: r7(".###. #...# #...# .###. #...# #...# .###."), 9: r7(".###. #...# #...# .#### ....# ....# .###."),
-  a: r7("..... ..... .###. ....# .#### #...# .####"), b: r7("#.... #.... ####. #...# #...# #...# ####."),
-  c: r7(".... .... .### #... #... #... .###"), d: r7("....# ....# .#### #...# #...# #...# .####"),
-  e: r7("..... ..... .###. #...# ##### #.... .###."), f: r7("..## .#.. #### .#.. .#.. .#.. .#.."),
-  g: r7("..... ..... .#### #...# #...# #...# .#### ....# .###."), h: r7("#.... #.... ####. #...# #...# #...# #...#"),
-  i: r7("# . # # # # #"), j: r7("..# ... ..# ..# ..# ..# ..# #.# .#."),
-  k: r7("#... #... #..# #.#. ##.. #.#. #..#"), l: r7("# # # # # # #"),
-  m: r7("..... ..... ####. #.#.# #.#.# #.#.# #.#.#"), n: r7(".... .... ###. #..# #..# #..# #..#"),
-  o: r7("..... ..... .###. #...# #...# #...# .###."), p: r7("..... ..... ####. #...# #...# #...# ####. #.... #...."),
-  q: r7("..... ..... .#### #...# #...# #...# .#### ....# ....#"), r: r7(".... .... #.## ##.. #... #... #..."),
-  s: r7(".... .... .### #... .##. ...# ###."), t: r7(".#.. .#.. #### .#.. .#.. .#.. ..##"),
-  u: r7(".... .... #..# #..# #..# #..# .###"), v: r7("..... ..... #...# #...# #...# .#.#. ..#.."),
-  w: r7("..... ..... #...# #...# #.#.# #.#.# .#.#."), x: r7("..... ..... #...# .#.#. ..#.. .#.#. #...#"),
-  y: r7(".... .... #..# #..# #..# #..# .### ...# .##."), z: r7(".... .... #### ...# ..#. .#.. ####"),
-  ".": r7(". . . . . . #"), ",": r7(". . . . . . # #"), "'": r7("# # . . . . ."),
-  "&": r7(".##.. #..#. #.#.. .#... #.#.# #..#. .##.#"), "-": r7("... ... ... ### ... ... ..."),
-  ":": r7(". . # . . # ."), "/": r7("....# ...#. ...#. ..#.. .#... .#... #...."),
-  "!": r7("# # # # # . #"), ">": r7("#... .#.. ..#. ...# ..#. .#.. #..."),
-  "Í": r7("..# .#. ### .#. .#. .#. .#. .#. ###"),
+const font = (file) => readFileSync(join(ROOT, "scripts", "fonts", file)).toString("base64");
+const SANS_FACE = `@font-face{font-family:Geist;font-weight:100 900;src:url(data:font/woff2;base64,${font("geist.woff2")}) format("woff2")}`;
+const MONO_FACE = `@font-face{font-family:GeistMono;src:url(data:font/woff2;base64,${font("geist-mono.woff2")}) format("woff2")}`;
+const BASE_CSS = `.sans{font-family:Geist,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+.mono{font-family:GeistMono,ui-monospace,SFMono-Regular,Menlo,monospace}
+.p{fill:none;stroke:${C.t};stroke-width:2;stroke-linecap:round;stroke-dasharray:6 200;stroke-dashoffset:8}
+@keyframes breathe{50%{opacity:.35}}
+.breathe{animation:breathe 2.8s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.p{opacity:0}}`;
+
+const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const MONO_EM = 0.6; // Geist Mono: avanço fixo de 600/1000
+const monoW = (str, size) => str.length * size * MONO_EM;
+
+function svg(w, h, label, css, body, { mono = true } = {}) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-label="${esc(label)}">` +
+    `<style>${SANS_FACE}${mono ? MONO_FACE : ""}${BASE_CSS}${css}</style>${body}</svg>\n`;
+}
+
+/** Superfície do cartão: fundo próprio (funciona em tema claro e escuro), borda de 1px e grade pontilhada que esmaece. */
+function surface(w, h, glow) {
+  const [gx, gy, gr] = glow;
+  return `<defs><pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="8" cy="8" r="1" fill="${C.dot}"/></pattern>` +
+    `<radialGradient id="fade" cx="${gx}" cy="${gy}" r="${gr}" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>` +
+    `<radialGradient id="glow" cx="${gx}" cy="${gy}" r="${gr}" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="${C.t}" stop-opacity=".11"/><stop offset="1" stop-color="${C.t}" stop-opacity="0"/></radialGradient>` +
+    `<mask id="m"><rect width="${w}" height="${h}" fill="url(#fade)"/></mask>` +
+    `<filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>` +
+    `<rect x=".5" y=".5" width="${w - 1}" height="${h - 1}" rx="12" fill="${C.bg}" stroke="${C.line}"/>` +
+    `<rect x="1" y="1" width="${w - 2}" height="${h - 2}" rx="12" fill="url(#dots)" mask="url(#m)"/>` +
+    `<rect x="1" y="1" width="${w - 2}" height="${h - 2}" rx="12" fill="url(#glow)"/>`;
+}
+
+/** Nó do grafo: pílula com rótulo mono. */
+function pill(label, cx, cy, { size = 12, cls = "", stroke = C.edge, color = "#c9cbd1", delay } = {}) {
+  const w = Math.round(monoW(label, size) + 22), h = size + 15;
+  const st = delay === undefined ? "" : ` style="animation-delay:${delay.toFixed(2)}s"`;
+  return `<g class="${cls}"><rect${st} x="${cx - w / 2}" y="${cy - h / 2}" width="${w}" height="${h}" rx="7" fill="${C.surf}" stroke="${stroke}"/>` +
+    `<text class="mono" x="${cx}" y="${cy + size * 0.36}" font-size="${size}" fill="${color}" text-anchor="middle">${esc(label)}</text></g>`;
+}
+const pillHalf = (label, size = 12) => Math.round(monoW(label, size) + 22) / 2;
+
+/** Curva suave da direita de um nó até a esquerda do outro. */
+const curve = (x1, y1, x2, y2) => {
+  const k = (x2 - x1) / 2;
+  return `M${x1} ${y1}C${x1 + k} ${y1} ${x2 - k} ${y2} ${x2} ${y2}`;
 };
-const TOP = { "Í": -2 }; // glifos que começam acima da linha de topo (acento)
-const SPACE = 3;
 
-const glyphW = (ch) => (ch === " " ? SPACE : FONT[ch]?.[0].length ?? SPACE);
-const measure = (str) => [...str].reduce((sum, ch, i) => sum + glyphW(ch) + (i ? 1 : 0), 0);
-const box = (x, y, w, h) => `M${x} ${y}h${w}v${h}h-${w}z`;
+/** Seta ↗ desenhada (a fonte subset não carrega o glifo). */
+const arrow = (x, y, color) =>
+  `<path d="M${x} ${y}l6 -6M${x + 1.5} ${y - 6}h4.5v4.5" fill="none" stroke="${color}" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>`;
 
-/** Texto como um único <path>: cada sequência horizontal de pixels vira um retângulo. */
-function text(str, x, y, scale, fill) {
-  let d = "";
-  let cx = 0;
-  for (const ch of str) {
-    if (FONT[ch] === undefined && ch !== " ") throw new Error(`glifo ausente: ${ch}`);
-    (FONT[ch] ?? []).forEach((row, ry) => {
-      for (let i = 0; i < row.length; ) {
-        if (row[i] !== "#") { i++; continue; }
-        let j = i;
-        while (row[j] === "#") j++;
-        d += box(x + (cx + i) * scale, y + (ry + (TOP[ch] ?? 0)) * scale, (j - i) * scale, scale);
-        i = j;
-      }
-    });
-    cx += glyphW(ch) + 1;
-  }
-  return d ? `<path fill="${fill}" d="${d}"/>` : "";
+// ---------- banner ----------
+function banner() {
+  const W = 960, H = 330;
+  const A = [604, 165], user = [530, 165];
+  const servers = [["mcp-fiscal", 730, 108], ["mcp-juridico", 730, 232]];
+  const tools = [["consultar_cnpj", 0, 860, 66], ["parse_nfe_xml", 0, 860, 146], ["buscar_processo", 1, 860, 232]];
+  const aHalf = pillHalf("agent", 12);
+
+  const edges = [];
+  const toServer = servers.map(([n, x, y]) => curve(A[0] + aHalf, A[1], x - pillHalf(n), y));
+  const toTool = tools.map(([n, si, x, y]) => curve(servers[si][1] + pillHalf(servers[si][0]), servers[si][2], x - pillHalf(n), y));
+  const inEdge = curve(user[0] + 4, user[1], A[0] - aHalf, A[1]);
+  edges.push(inEdge, ...toServer, ...toTool);
+
+  const DUR = 4.8;
+  const routes = tools.map((t, i) => ({ seg: [inEdge, toServer[t[1]], toTool[i]], delay: -(i * DUR) / 3 }));
+  const pulses = routes.map(({ seg, delay }) => seg.map((d, k) =>
+    `<path class="p s${k}" pathLength="100" style="animation-delay:${delay.toFixed(2)}s" d="${d}"/>`).join("")).join("");
+
+  const css = `.s0,.s1,.s2{animation:${DUR}s linear infinite}
+.s0{animation-name:s0}.s1{animation-name:s1}.s2{animation-name:s2}
+@keyframes s0{0%{stroke-dashoffset:8}22%,100%{stroke-dashoffset:-102}}
+@keyframes s1{0%,22%{stroke-dashoffset:8}50%,100%{stroke-dashoffset:-102}}
+@keyframes s2{0%,50%{stroke-dashoffset:8}78%,100%{stroke-dashoffset:-102}}
+.hit rect{animation:hit ${DUR}s linear infinite}
+@keyframes hit{0%,76%,100%{stroke:${C.edge}}82%{stroke:${C.t}}}
+.ring{transform-box:fill-box;transform-origin:center;animation:ring 2.8s ease-out infinite}
+@keyframes ring{0%{transform:scale(.6);opacity:.9}100%{transform:scale(2.6);opacity:0}}`;
+
+  const body = surface(W, H, [720, 165, 330]) +
+    `<text class="mono" x="48" y="108" font-size="12" fill="${C.t}" letter-spacing=".04em">dehor.dev</text>` +
+    `<text class="sans" x="46" y="164" font-size="50" font-weight="600" fill="${C.w}" letter-spacing="-.03em">Nikolas de Hor</text>` +
+    `<text class="sans" x="48" y="200" font-size="18" fill="#a3a5ac" letter-spacing="-.005em">AI Engineer · agents &amp; MCP in production</text>` +
+    `<rect x="48.5" y="234.5" width="232" height="27" rx="13.5" fill="${C.surf}" stroke="${C.line}"/>` +
+    `<circle class="ring" cx="64" cy="248" r="3.5" fill="none" stroke="${C.t}"/><circle cx="64" cy="248" r="3" fill="${C.t}"/>` +
+    `<text class="mono" x="76" y="252" font-size="11" fill="${C.s}">now building <tspan fill="${C.w}">LUME</tspan> at CAST</text>` +
+    `<g fill="none" stroke="${C.edge}" stroke-width="1">${edges.map((d) => `<path d="${d}"/>`).join("")}</g>` +
+    `<g filter="url(#blur)">${pulses}</g>` +
+    `<circle cx="${user[0]}" cy="${user[1]}" r="4" fill="${C.a}"/><circle class="ring" style="stroke:${C.a}" cx="${user[0]}" cy="${user[1]}" r="4" fill="none" stroke="${C.a}"/>` +
+    pill("agent", A[0], A[1], { size: 12, stroke: C.t, color: C.w }) +
+    servers.map(([n, x, y]) => pill(n, x, y)).join("") +
+    tools.map(([n, , x, y], i) => pill(n, x, y, { cls: "hit", color: C.s, delay: routes[i].delay })).join("");
+
+  return svg(W, H, "Nikolas de Hor. AI Engineer, agents and MCP in production.", css, body);
 }
 
-/** Quebra por palavras para caber em maxW pixels na escala dada. */
-function wrap(str, scale, maxW) {
-  const lines = [];
-  let cur = "";
-  for (const word of str.split(" ")) {
-    const next = cur ? `${cur} ${word}` : word;
-    if (measure(next) * scale > maxW && cur) { lines.push(cur); cur = word; } else cur = next;
+// ---------- arte de cada cartão (região à direita, x 540 a 720) ----------
+function matrixArt(cols, rows, x0, y0, gap) {
+  const n = cols * rows, step = 3.6 / n;
+  let out = "";
+  for (let i = 0; i < n; i++) {
+    const cx = x0 + (i % cols) * gap, cy = y0 + Math.floor(i / cols) * gap;
+    out += `<circle cx="${cx}" cy="${cy}" r="2.4" style="animation-delay:${(i * step).toFixed(2)}s"/>`;
   }
-  if (cur) lines.push(cur);
-  return lines;
+  return `<g class="mx" fill="${C.edge}">${out}</g>`;
 }
+const MATRIX_CSS = `.mx circle{animation:lit 3.6s linear infinite}@keyframes lit{0%{fill:${C.t}}12%,100%{fill:${C.edge}}}`;
 
-// ---------- sprites (bitmaps do mundo de dehor.dev; "." transparente) ----------
-function sprite(rows, x, y, s) {
-  const byColor = {};
-  rows.forEach((row, ry) => {
-    for (let i = 0; i < row.length; ) {
-      const c = row[i];
-      if (c === "." || !C[c]) { i++; continue; }
-      let j = i;
-      while (row[j] === c) j++;
-      byColor[c] = (byColor[c] ?? "") + box(x + i * s, y + ry * s, (j - i) * s, s);
-      i = j;
+function waveArt(n, x0, cy, color, cls = "wv") {
+  const hs = [0.35, 0.6, 0.9, 0.55, 1, 0.7, 0.4, 0.8, 0.5, 0.95, 0.65, 0.3, 0.75, 0.55, 0.85, 0.45, 0.6];
+  let out = "";
+  for (let i = 0; i < n; i++) {
+    const h = Math.round(hs[i % hs.length] * 56);
+    out += `<rect x="${x0 + i * 9}" y="${cy - h / 2}" width="4" height="${h}" rx="2" style="animation-delay:-${((i * 0.37) % 1.6).toFixed(2)}s"/>`;
+  }
+  return `<g class="${cls}" fill="${color}">${out}</g>`;
+}
+const WAVE_CSS = `.wv rect{transform-box:fill-box;transform-origin:center;animation:wv 1.6s ease-in-out infinite}@keyframes wv{50%{transform:scaleY(.45)}}`;
+
+function treeArt() {
+  const root = [560, 90], mids = [[620, 46], [620, 76], [620, 106], [620, 136]];
+  let edges = "", leaves = "";
+  mids.forEach(([mx, my]) => {
+    edges += `<path d="${curve(root[0], root[1], mx, my)}"/>`;
+    for (let j = 0; j < 4; j++) {
+      const ly = my - 10 + j * 6.5;
+      edges += `<path d="${curve(mx, my, 690, ly)}"/>`;
+      leaves += `<circle cx="690" cy="${ly}" r="1.6"/>`;
     }
   });
-  return Object.entries(byColor).map(([c, d]) => `<path fill="${C[c]}" d="${d}"/>`).join("");
+  const route = [curve(root[0], root[1], 620, 76), curve(620, 76, 690, 72.5)];
+  return `<g fill="none" stroke="${C.edge}">${edges}</g><g fill="${C.m}">${leaves}</g>` +
+    mids.map(([x, y]) => `<circle cx="${x}" cy="${y}" r="3" fill="${C.bg}" stroke="${C.s}"/>`).join("") +
+    `<circle cx="${root[0]}" cy="${root[1]}" r="5" fill="${C.t}"/>` +
+    `<g filter="url(#blur)"><path class="p t0" pathLength="100" d="${route[0]}"/><path class="p t1" pathLength="100" d="${route[1]}"/></g>`;
 }
-
-const TIAO = ["....aaaaa....", "...aAAAAAa...", ".aaaaaaaaaaa.", "..ttttttttt..", "..twwtttwwt..", "..twktttwkt..", "..ttttttttt..", "..tttkkkttt..", "...ttttttt...", "....ccCcc....", ".tTtttttttTt.", ".t.ttttttt.t.", "...ttttttt..."];
-const TIAO_LEGS_A = "...tt...tt...";
-const TIAO_LEGS_B = "....tt.tt....";
-const COW = [
-  "...........a..a.", "...........wwwww", ".wwwwwwkkwwwwwkw", "kwkkwwwkkwwwwwpp", "kwkkwwwwwwwwwwpp",
-  "kwwwwwwwkkw.www.", ".wwwwwwwkkw.....", "..w.w...w.w.....", "..k.k...k.k.....",
-];
-const UNIT = ["gkDDDDDkg", "gkDsDsDkg", "gkkkkkkkg"];
-const RACK = ["ggggggggg", "gkkkkkkkg", ...UNIT, ...UNIT, ...UNIT, ...UNIT, "ggggggggg", "gg.....gg"];
-
-// ---------- moldura comum ----------
-const W = 840;
-const STYLE = `.blink{animation:blink 1.2s steps(1) infinite}
-@keyframes blink{50%{opacity:0}}
-.pulse{animation:pulse 2.4s ease-in-out infinite}
-@keyframes pulse{50%{opacity:.25}}
-.f3{opacity:0;animation:f3 1.2s steps(1) infinite}
-@keyframes f3{0%{opacity:1}33.4%{opacity:0}}
-.la{animation:blink .5s steps(1) infinite}.lb{opacity:0;animation:lb .5s steps(1) infinite}
-@keyframes lb{50%{opacity:1}}
-@media (prefers-reduced-motion:reduce){*{animation:none!important}.d0,.la{opacity:1!important}}`;
-
-const chamferPath = (w, h, i) =>
-  `M${4 + i} ${i}H${w - 4 - i}V${2 + i}H${w - 2 - i}V${4 + i}H${w - i}V${h - 4 - i}H${w - 2 - i}V${h - 2 - i}H${w - 4 - i}V${h - i}H${4 + i}V${h - 2 - i}H${2 + i}V${h - 4 - i}H${i}V${4 + i}H${2 + i}V${2 + i}H${4 + i}Z`;
-
-function frame(h, inner, label, extraStyle = "") {
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${h}" width="${W}" height="${h}" shape-rendering="crispEdges" role="img" aria-label="${label}"><style>${STYLE}${extraStyle}</style>` +
-    `<defs><pattern id="d" width="24" height="24" patternUnits="userSpaceOnUse"><rect x="11" y="11" width="2" height="2" fill="${C.dot}"/></pattern></defs>` +
-    `<path d="${chamferPath(W, h, 0)}" fill="${C.line}"/><path d="${chamferPath(W, h, 2)}" fill="${C.bg}"/>` +
-    `<rect x="4" y="4" width="${W - 8}" height="${h - 8}" fill="url(#d)"/>${inner}</svg>\n`;
-}
-
-/** Selo teal ao lado do título; o halo pulsa devagar. */
-function badge(label, x, y) {
-  const w = measure(label) * 2 + 20;
-  return `<rect class="pulse" x="${x - 3}" y="${y - 3}" width="${w + 6}" height="${32}" fill="${C.T}"/>` +
-    `<rect x="${x}" y="${y}" width="${w}" height="26" fill="${C.t}"/>` + text(label, x + 10, y + 6, 2, C.k);
-}
-
-const H = 236;
-/** Cartão de projeto: rótulo, título com selo, descrição em até 2 linhas, link e arte à direita. */
-function card({ kicker, title, badge: b, body, link, art, label, bodyW = 590, extraStyle = "", h = H }) {
-  let inner = text(kicker, 40, 30, 2, C.a) + text(title, 40, 58, 4, C.w) + badge(b, 40 + measure(title) * 4 + 20, 59);
-  const lines = wrap(body, 3, bodyW);
-  if (lines.length > 2) throw new Error(`${title}: descrição passou de 2 linhas`);
-  lines.forEach((line, i) => { inner += text(line, 40, 110 + i * 34, 3, C.s); });
-  inner += text(`> ${link}`, 40, 196, 2, C.t) + art;
-  return frame(h, inner, label, extraStyle);
-}
-
-// ---------- arte de cada cartão ----------
-function rackArt() {
-  const x = 700, y = 42, s = 8;
-  const leds = [0, 1, 2, 3].map((u) =>
-    `<rect class="blink" style="animation-duration:${(0.9 + u * 0.35).toFixed(2)}s;animation-delay:-${(u * 0.37).toFixed(2)}s" x="${x + 6 * s}" y="${y + (3 + u * 3) * s}" width="${s}" height="${s}" fill="${C.t}"/>`).join("");
-  return sprite(RACK, x, y, s) + leds;
-}
-
-function tiaoVoiceArt() {
-  const x = 714, y = 66, s = 6;
-  const frames = [[2, 5, 3, 6, 2], [4, 2, 6, 3, 5], [6, 4, 2, 5, 3]];
-  const bars = frames.map((hs, f) =>
-    `<path class="f3 d${f}" style="animation-delay:-${(f * 0.4).toFixed(1)}s" fill="${C.a}" d="${hs.map((h, i) => box(x - 64 + i * 10, y + 44 - h * 4, 6, h * 8)).join("")}"/>`).join("");
-  return bars + sprite([...TIAO, TIAO_LEGS_A], x, y, s);
-}
-
-function scalesArt() {
-  const x = 688, y = 46, s = 8;
-  const post = sprite(["....a....", "...aAa...", "....a....", "....a....", "....a....", "....a....", "....a....", "....a....", "....a....", "..aaaaa..", ".AAAAAAA."], x + 2 * s, y, s);
-  const tilt = (dl, dr) => sprite(["aaaaaaaaaaaaa"], x, y + 3 * s, s) +
-    sprite(["a", "a"], x, y + (4 + dl) * s, s) + sprite(["a", "a"], x + 12 * s, y + (4 + dr) * s, s) +
-    sprite(["aaaaa", ".AAA."], x - 2 * s, y + (6 + dl) * s, s) + sprite(["aaaaa", ".AAA."], x + 10 * s, y + (6 + dr) * s, s);
-  return post + `<g class="la" style="animation-duration:2.4s">${tilt(0, 1)}</g><g class="lb" style="animation-duration:2.4s">${tilt(1, 0)}</g>`;
-}
+const TREE_CSS = `.t0,.t1{animation:3.2s linear infinite}.t0{animation-name:t0}.t1{animation-name:t1}
+@keyframes t0{0%{stroke-dashoffset:8}35%,100%{stroke-dashoffset:-102}}
+@keyframes t1{0%,35%{stroke-dashoffset:8}70%,100%{stroke-dashoffset:-102}}`;
 
 function transcribeArt() {
-  const x = 676, y = 44, s = 7;
-  const screen = ["gggggggggggggggg", "gkkkkkkkkkkkkkkg", "gkkkkkakkkkkkkkg", "gkkkkkaakkkkkkkg", "gkkkkkaaakkkkkkg", "gkkkkkaakkkkkkkg", "gkkkkkakkkkkkkkg", "gkkkkkkkkkkkkkkg", "gggggggggggggggg"];
-  const lines = [112, 84, 98].map((w, i) =>
-    `<rect class="blink" style="animation-duration:2.4s;animation-delay:-${(i * 0.4).toFixed(1)}s" x="${x}" y="${y + 80 + i * 14}" width="${w}" height="6" fill="${i === 0 ? C.t : C.g}"/>`).join("");
-  return sprite(screen, x, y, s) + lines;
+  const lines = [[64, C.t], [48, C.edge], [58, C.edge], [36, C.edge]].map(([w, c], i) =>
+    `<rect class="tl" style="animation-delay:${(i * 0.5).toFixed(1)}s" x="618" y="${66 + i * 16}" width="${w}" height="5" rx="2.5" fill="${c}"/>`).join("");
+  return waveArt(7, 540, 90, C.s) + `<path d="M${602} 85l5 5-5 5" fill="none" stroke="${C.m}" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>` + lines;
 }
+const TRANSCRIBE_CSS = `${WAVE_CSS}.tl{transform-box:fill-box;transform-origin:left;animation:tl 3s ease-out infinite}@keyframes tl{0%{transform:scaleX(0)}40%,100%{transform:scaleX(1)}}`;
+
+function miniGraphArt() {
+  const a = [560, 90], ns = [[650, 50], [668, 92], [646, 134]];
+  const ds = ns.map(([x, y]) => curve(a[0] + 6, a[1], x - 5, y));
+  return `<g fill="none" stroke="${C.edge}">${ds.map((d) => `<path d="${d}"/>`).join("")}</g>` +
+    `<g filter="url(#blur)">${ds.map((d, i) => `<path class="p mg" pathLength="100" style="animation-delay:-${i}s" d="${d}"/>`).join("")}</g>` +
+    ns.map(([x, y]) => `<circle cx="${x}" cy="${y}" r="5" fill="${C.bg}" stroke="${C.s}"/>`).join("") +
+    `<circle cx="${a[0]}" cy="${a[1]}" r="6" fill="${C.t}"/>`;
+}
+const MINI_CSS = `.mg{animation:mg 3s linear infinite}@keyframes mg{0%{stroke-dashoffset:8}60%,100%{stroke-dashoffset:-102}}`;
 
 function hubArt() {
-  const cx = 732, cy = 116;
-  let out = "";
-  [[-68, -58], [62, -62], [-72, 56], [64, 58]].forEach(([dx, dy], i) => {
-    for (let k = 1; k < 6; k++) out += `<rect x="${Math.round(cx + (dx * k) / 6) - 2}" y="${Math.round(cy + (dy * k) / 6) - 2}" width="4" height="4" fill="${C.g}"/>`;
-    out += `<rect class="pulse" style="animation-delay:-${(i * 0.6).toFixed(1)}s" x="${cx + dx - 10}" y="${cy + dy - 10}" width="20" height="20" fill="${C.T}"/>`;
-    out += `<rect x="${cx + dx - 6}" y="${cy + dy - 6}" width="12" height="12" fill="${C.t}"/>`;
+  const cx = 616, cy = 90, r = 50;
+  const spokes = [0, 1, 2, 3, 4, 5].map((i) => {
+    const ang = (i / 6) * Math.PI * 2 - Math.PI / 2;
+    return [cx + Math.cos(ang) * r, cy + Math.sin(ang) * r];
   });
-  return out + `<rect x="${cx - 18}" y="${cy - 18}" width="36" height="36" fill="${C.a}"/><rect x="${cx - 10}" y="${cy - 10}" width="20" height="20" fill="${C.A}"/>`;
+  return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${C.line}" stroke-dasharray="2 5"/>` +
+    `<g stroke="${C.edge}">${spokes.map(([x, y]) => `<path d="M${cx} ${cy}L${x.toFixed(1)} ${y.toFixed(1)}"/>`).join("")}</g>` +
+    `<g class="orbit">${spokes.map(([x, y], i) => `<circle class="breathe" style="animation-delay:-${(i * 0.45).toFixed(2)}s" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4" fill="${C.bg}" stroke="${C.t}"/>`).join("")}</g>` +
+    `<circle cx="${cx}" cy="${cy}" r="9" fill="${C.a}"/>`;
+}
+const HUB_CSS = `.orbit{transform-origin:616px 90px;animation:orbit 40s linear infinite}@keyframes orbit{to{transform:rotate(360deg)}}`;
+
+// ---------- cartão de projeto ----------
+const CW = 840, CH = 180;
+function card({ kicker, title, body, link, stat, statLabel, statSize = 60, art, css = "", label }) {
+  const lines = Array.isArray(body) ? body : [body];
+  const content =
+    `<text class="mono" x="36" y="44" font-size="11" fill="${C.s}" letter-spacing=".08em">${esc(kicker)}</text>` +
+    `<text class="sans" x="35" y="80" font-size="27" font-weight="600" fill="${C.w}" letter-spacing="-.02em">${esc(title)}</text>` +
+    lines.map((l, i) => `<text class="sans" x="36" y="${111 + i * 21}" font-size="16" fill="${C.s}">${esc(l)}</text>`).join("") +
+    `<text class="mono" x="36" y="152" font-size="12" fill="${C.t}">${esc(link)}</text>` + arrow(36 + monoW(link, 12) + 6, 151, C.t) +
+    art +
+    `<text class="sans" x="806" y="${statSize >= 50 ? 104 : 96}" font-size="${statSize}" font-weight="600" fill="${C.w}" text-anchor="end" letter-spacing="-.04em">${esc(stat)}</text>` +
+    `<text class="mono" x="806" y="130" font-size="11" fill="${C.s}" text-anchor="end" letter-spacing=".08em">${esc(statLabel)}</text>`;
+  return svg(CW, CH, label, css, surface(CW, CH, [640, 90, 220]) + content);
 }
 
-// Cartão do site: o Tião anda pela linha tracejada até a vaca, diz "200 OK" e volta.
-const WALK = 360; // distância percorrida em px
-const TS = 3; // escala do Tião
-const TW = 13 * TS;
-const SITE_STYLE = `
-.walk{animation:walk 18s steps(80) infinite}
-@keyframes walk{0%{transform:translate(0px,0px) scale(1,1)}42%{transform:translate(${WALK}px,0px) scale(1,1)}53.99%{transform:translate(${WALK}px,0px) scale(1,1)}54%{transform:translate(${WALK + TW}px,0px) scale(-1,1)}96%{transform:translate(${TW}px,0px) scale(-1,1)}99.99%{transform:translate(${TW}px,0px) scale(-1,1)}}
-.bub{opacity:0;animation:bub 18s steps(1) infinite}
-@keyframes bub{43%{opacity:1}53%{opacity:0}}`;
-function siteArt() {
-  const gx = 330, ground = 262;
-  const tiao = sprite(TIAO, 0, 0, TS) +
-    `<g class="la">${sprite([TIAO_LEGS_A], 0, 13 * TS, TS)}</g><g class="lb">${sprite([TIAO_LEGS_B], 0, 13 * TS, TS)}</g>`;
-  let dash = "";
-  for (let x = gx; x < 800; x += 12) dash += box(x, ground, 6, 2);
-  const bw = measure("200 OK") * 2 + 16, bx = gx + WALK + TW / 2 - bw / 2, by = ground - 14 * TS - 44;
-  const bubble = `<g class="bub"><rect x="${bx}" y="${by}" width="${bw}" height="26" fill="${C.w}"/>` +
-    `<rect x="${bx + bw / 2 - 3}" y="${by + 26}" width="6" height="6" fill="${C.w}"/>${text("200 OK", bx + 8, by + 6, 2, C.k)}</g>`;
-  return `<path fill="${C.g}" d="${dash}"/>` + sprite(COW, 748, ground - 9 * TS, TS) +
-    `<g transform="translate(${gx} ${ground - 14 * TS})"><g class="walk">${tiao}</g></g>` + bubble;
-}
-
-// ---------- cartões ----------
 const files = {
+  "banner.svg": banner(),
   "fiscal.svg": card({
-    kicker: "MCP SERVER", title: "MCP FISCAL BRASIL", badge: "44 TOOLS",
+    kicker: "MCP SERVER · OPEN SOURCE", title: "MCP Fiscal Brasil",
     body: "Brazil's tax system as MCP tools. Open source, on PyPI.",
-    link: "github.com/DeHor-Labs/mcp-fiscal-brasil", art: rackArt(),
+    link: "github.com/DeHor-Labs/mcp-fiscal-brasil", stat: "44", statLabel: "TOOLS",
+    art: matrixArt(11, 4, 552, 66, 13), css: MATRIX_CSS,
     label: "MCP Fiscal Brasil, 44 tools: Brazil's tax system as MCP tools. Open source, on PyPI.",
   }),
   "agrovoz.svg": card({
-    kicker: "AI PRODUCT", title: "AGROVOZ", badge: "17 MODULES",
+    kicker: "AI PRODUCT · WHATSAPP", title: "AgroVoz",
     body: "WhatsApp AI agent for farm management. Voice, text and photo.",
-    link: "agrovoz.app", art: tiaoVoiceArt(), bodyW: 570,
+    link: "agrovoz.app", stat: "17", statLabel: "MODULES",
+    art: waveArt(17, 552, 90, C.a), css: WAVE_CSS,
     label: "AgroVoz, 17 modules: WhatsApp AI agent for farm management. Voice, text and photo.",
   }),
   "juridico.svg": card({
-    kicker: "MCP SERVER", title: "MCP JURÍDICO BRASIL", badge: "91 COURTS",
+    kicker: "MCP SERVER · OPEN SOURCE", title: "MCP Jurídico Brasil",
     body: "Court cases from CNJ DataJud as MCP tools. Open source.",
-    link: "github.com/DeHor-Labs/mcp-juridico-brasil", art: scalesArt(),
+    link: "github.com/DeHor-Labs/mcp-juridico-brasil", stat: "91", statLabel: "COURTS",
+    art: treeArt(), css: TREE_CSS,
     label: "MCP Jurídico Brasil, 91 courts: court cases from CNJ DataJud as MCP tools. Open source.",
   }),
   "transcreveai.svg": card({
-    kicker: "MCP SERVER", title: "TRANSCREVEAI", badge: "MULTIMODAL",
+    kicker: "MCP SERVER · MULTIMODAL", title: "TranscreveAI",
     body: "Video and audio into searchable dossiers, served over MCP.",
-    link: "github.com/DeHor-Labs/transcreve-ai", art: transcribeArt(),
+    link: "github.com/DeHor-Labs/transcreve-ai", stat: "A/V", statLabel: "TO DOSSIER",
+    art: transcribeArt(), css: TRANSCRIBE_CSS,
     label: "TranscreveAI, multimodal: video and audio into searchable dossiers, served over MCP.",
   }),
   "site.svg": card({
-    kicker: "DEHOR.DEV", title: "MY SITE", badge: "BUILT BY ROBOTS",
-    body: "Every section assembled by tiny pixel agents. Try my live MCP agent.",
-    link: "dehor.dev", art: siteArt(), extraStyle: SITE_STYLE, h: 290,
-    label: "My site, dehor.dev, built by robots: every section assembled by tiny pixel agents. Try my live MCP agent.",
+    kicker: "PORTFOLIO", title: "dehor.dev",
+    body: "Projects, writing and a live MCP agent you can talk to.",
+    link: "dehor.dev", stat: "live", statLabel: "MCP AGENT",
+    art: miniGraphArt(), css: MINI_CSS,
+    label: "My site, dehor.dev: projects, writing and a live MCP agent you can talk to.",
   }),
   "now.svg": card({
-    kicker: "NOW", title: "CAST", badge: "AI ENGINEER",
-    body: "AI Engineer at CAST. Lead architect of LUME, an enterprise AI agent hub.",
-    link: "linkedin.com/in/nikolasdehor", art: hubArt(),
+    kicker: "NOW", title: "AI Engineer at CAST",
+    body: "Lead architect of LUME, an enterprise AI agent hub.",
+    link: "linkedin.com/in/nikolasdehor", stat: "LUME", statLabel: "AGENT HUB", statSize: 44,
+    art: hubArt(), css: HUB_CSS,
     label: "Now: AI Engineer at CAST. Lead architect of LUME, an enterprise AI agent hub.",
   }),
 };
 
 // ---------- botões ----------
 function button(label) {
-  const s = 3, h = 48, w = measure(`> ${label}`) * s + 40;
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" shape-rendering="crispEdges" role="img" aria-label="${label}">` +
-    `<path fill="${C.T}" d="${chamferPath(w, h, 0)}"/><path fill="${C.surf}" d="${chamferPath(w, h, 2)}"/>` +
-    text(">", 20, 14, s, C.a) + text(label, 20 + measure("> ") * s, 14, s, C.w) + "</svg>\n";
+  const size = 13, h = 40, w = Math.round(monoW(label, size) + 64);
+  const body = `<rect x=".5" y=".5" width="${w - 1}" height="${h - 1}" rx="8" fill="${C.bg}" stroke="${C.edge}"/>` +
+    `<circle cx="18" cy="20" r="3" fill="${C.t}"/>` +
+    `<text class="mono" x="30" y="24.5" font-size="${size}" fill="${C.w}">${esc(label)}</text>` + arrow(w - 22, 23, C.s);
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-label="${esc(label)}">` +
+    `<style>${MONO_FACE}.mono{font-family:GeistMono,ui-monospace,SFMono-Regular,Menlo,monospace}</style>${body}</svg>\n`;
 }
-files["btn-site.svg"] = button("SITE");
-files["btn-linkedin.svg"] = button("LINKEDIN");
-files["btn-email.svg"] = button("E-MAIL");
-files["btn-news.svg"] = button("DEHOR NEWS");
+files["btn-site.svg"] = button("dehor.dev");
+files["btn-linkedin.svg"] = button("LinkedIn");
+files["btn-email.svg"] = button("E-mail");
+files["btn-news.svg"] = button("DeHor News");
 
 const DASHES = new RegExp(`[${String.fromCharCode(0x2013, 0x2014)}]`);
-for (const [name, svg] of Object.entries(files)) {
-  if (DASHES.test(svg)) throw new Error(`${name}: travessão proibido`);
-  writeFileSync(join(OUT, name), svg);
-  console.log(name.padEnd(18), `${(Buffer.byteLength(svg) / 1024).toFixed(1)} KB`);
+const MAX_KB = 60;
+for (const [name, out] of Object.entries(files)) {
+  if (DASHES.test(out)) throw new Error(`${name}: travessão proibido`);
+  const kb = Buffer.byteLength(out) / 1024;
+  if (kb > MAX_KB) throw new Error(`${name}: ${kb.toFixed(1)} KB passa de ${MAX_KB} KB`);
+  writeFileSync(join(OUT, name), out);
+  console.log(name.padEnd(18), `${kb.toFixed(1)} KB`);
 }
