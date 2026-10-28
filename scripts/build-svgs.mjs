@@ -256,6 +256,7 @@ function button(label) {
 }
 files["btn-site.svg"] = button("dehor.dev");
 files["btn-linkedin.svg"] = button("LinkedIn");
+files["btn-x.svg"] = button("X");
 files["btn-email.svg"] = button("E-mail");
 files["btn-news.svg"] = button("DeHor News");
 

@@ -1,5 +1,7 @@
 <a href="https://dehor.dev"><img src="assets/banner.svg" width="100%" alt="Nikolas de Hor. AI Engineer, agents and MCP in production. An agent graph routes calls to MCP servers and tools such as consultar_cnpj, parse_nfe_xml and buscar_processo."></a>
 
+<p align="center">AI Engineer. Agentes de IA, LLM, RAG e MCP em produção. Criador do MCP Fiscal Brasil.</p>
+
 ### Things I built
 
 <a href="https://github.com/DeHor-Labs/mcp-fiscal-brasil"><img src="assets/fiscal.svg" width="100%" alt="MCP Fiscal Brasil, 44 tools: Brazil's tax system as MCP tools. Open source, on PyPI."></a>
@@ -15,6 +17,7 @@
 <p align="center">
 <a href="https://dehor.dev"><img src="assets/btn-site.svg" height="40" alt="Site: dehor.dev"></a>&nbsp;
 <a href="https://www.linkedin.com/in/nikolasdehor"><img src="assets/btn-linkedin.svg" height="40" alt="LinkedIn"></a>&nbsp;
+<a href="https://x.com/nikolasdehor1"><img src="assets/btn-x.svg" height="40" alt="X (@nikolasdehor1)"></a>&nbsp;
 <a href="mailto:nikolasdehor79@gmail.com"><img src="assets/btn-email.svg" height="40" alt="E-mail"></a>&nbsp;
 <a href="https://news.dehor.com.br"><img src="assets/btn-news.svg" height="40" alt="DeHor News"></a>
 </p>
